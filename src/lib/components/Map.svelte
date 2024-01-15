@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte'
+	import { fade } from 'svelte/transition'
 
 	// Stores
 	import {
@@ -80,12 +81,9 @@
 	let innerWidth: number
 
 	let overlay: Overlay
+	let overlayBoolean: boolean = false
 	let overlayElement: HTMLElement
-	let overlayContents: string
-
-	let tooltip: string = 'hidden'
-	let tooltipCoords: number[] = [0, 0]
-	let tooltipContents: string = ''
+	let overlayContents: any
 
 	const addControls = () => {
 		const collection = new Collection()
@@ -105,7 +103,8 @@
 	}
 
 	const closeOverlay = () => {
-		overlay.setPosition(undefined)
+		overlayBoolean = false
+		// overlay.setPosition(undefined)
 	}
 
 	// Add Mapbox background layer
@@ -324,7 +323,7 @@
 				selectable = true
 				feature.setStyle(selectableStyles)
 
-				// Add Berlage icon for selectable items
+				// // Add Berlage icon for selectable items
 				// const berlageIcon = new Style({
 				// 	image: new Icon({
 				// 		anchor: [0.5, 0.7],
@@ -349,12 +348,6 @@
 		if (selectable) createListeners()
 	}
 
-	// Todo:
-	// Overlays: https://openlayers.org/en/latest/examples/overlay.html
-	// Markers: https://openlayers.org/en/latest/examples/icon.html
-	// Tooltip: https://openlayers.org/en/latest/examples/tooltip-on-hover.html
-	// Popup: https://openlayers.org/en/latest/examples/popup.html
-
 	function createListeners() {
 		pointerMoveKey = map.on('pointermove', function (event) {
 			// https://stackoverflow.com/questions/60511753/why-isnt-openlayers-detecting-touch-events-from-my-laptop
@@ -367,20 +360,11 @@
 							feature.setStyle(selectableStyles)
 						}
 					})
-					tooltip = 'hidden'
 					map.getTargetElement().style.cursor = ''
 				}
 				if (feature && feature.getProperties().href) {
 					feature.setStyle(selectedStyles)
 					map.getTargetElement().style.cursor = 'pointer'
-					// // Overlay
-					// const properties = feature.getProperties()
-					// const label = properties.label || properties.collectionLabel
-					// if (label) {
-					// 	tooltipCoords = event.pixel
-					// 	tooltip = 'visible'
-					// 	tooltipContents = label
-					// }
 				}
 			})
 		})
@@ -391,18 +375,12 @@
 				if (feature) {
 					const properties = feature.getProperties()
 					if (properties.href) {
-						// tooltip = 'hidden'
-						// map.getTargetElement().style.cursor = ''
-						// window.location.hash = properties.href
-
-						const coordinate = event.coordinate
+						map.getTargetElement().style.cursor = ''
 						// const hdms = toStringHDMS(toLonLat(coordinate))
-						const label = properties.label || properties.collectionLabel
-						const hrefArg = properties.href
-						const hrefDoc = properties.href.replace('argumentation', 'documentation')
-						// overlayContents = `<h1>${label}</h1><a href="${hrefDoc}">Open in Documentation</a><br><a href="${hrefArg}">Open in Argumentation</a>`
 						overlayContents = properties
+						const coordinate = event.coordinate
 						overlay.setPosition(coordinate)
+						overlayBoolean = true
 						console.log('Positioned overlay')
 					}
 				} else closeOverlay()
@@ -448,6 +426,7 @@
 
 		overlay = new Overlay({
 			element: overlayElement,
+			offset: [15, 15],
 			autoPan: {
 				animation: {
 					duration: 250
@@ -462,7 +441,6 @@
 			layers: [
 				xyzLayer,
 				// osmLayer,
-				// mapBoxLayer,
 				warpedMapLayer,
 				vectorLayer
 			],
@@ -477,38 +455,39 @@
 
 <div id="ol" class="map" style="--text-color: {$textColor}" />
 
-<div
-	id="tooltip"
-	style="visibility: {tooltip}; left: {tooltipCoords[0]}px; top: {tooltipCoords[1]}px"
->
-	{tooltipContents}
-</div>
-
-<div id="overlay" class="ol-popup" bind:this={overlayElement}>
-	<button on:click={closeOverlay} id="popup-closer" class="ol-popup-closer"
-		><body>{@html close}</body></button
-	>
-	<div id="popup-content">
-		{#if overlayContents}
-			{#if overlayContents.href}
-				<p>{overlayContents.label || overlayContents.collectionLabel}</p>
-				<p class="overlay-link">
-					<a on:click={closeOverlay} href={overlayContents.href}
-						><i>
-							Open in
-							{#if overlayContents.href.includes('argumentation')}
-								Argumentation
-							{:else if overlayContents.href.includes('documentation')}
-								Documentation
-							{/if}
-						</i></a
-					>
-				</p>
-			{:else}
-				<p>{overlayContents.label || overlayContents.collectionLabel}</p>
-			{/if}
-		{/if}
-	</div>
+<div id="overlay" bind:this={overlayElement}>
+	{#if overlayBoolean}
+		<div id="overlay-contents" transition:fade>
+			<div id="overlay-closer">
+				<button on:click={closeOverlay}><body>{@html close}</body></button>
+			</div>
+			<div id="overlay-content">
+				{#if overlayContents}
+					{#if overlayContents.href}
+						<p>{overlayContents.label || overlayContents.collectionLabel}</p>
+						<p class="overlay-link">
+							<a on:click={closeOverlay} href={overlayContents.href}
+								><i>
+									{#if $overview}
+										Start slideshow
+									{:else}
+										Open in
+										{#if overlayContents.href.includes('argumentation')}
+											Argumentation
+										{:else if overlayContents.href.includes('documentation')}
+											Documentation
+										{/if}
+									{/if}
+								</i></a
+							>
+						</p>
+					{:else}
+						<p>{overlayContents.label || overlayContents.collectionLabel}</p>
+					{/if}
+				{/if}
+			</div>
+		</div>
+	{/if}
 </div>
 
 <div id="controls" class:black={$black} />
@@ -523,39 +502,25 @@
 		z-index: 1;
 	}
 
-	#tooltip {
+	#overlay {
 		position: absolute;
-		display: inline-block;
-		height: auto;
-		width: auto;
-		max-width: 250px;
-		z-index: 100;
-		background-color: yellow;
-		color: black;
-		text-align: left;
-		border-radius: 0.2rem;
-		padding: 5px;
-		transform: translate(1rem, 1rem);
-		pointer-events: none;
 	}
 
-	.ol-popup {
-		position: relative;
-		background-color: yellow;
+	#overlay-contents {
+		background-color: rgba(255, 255, 0, 0.9);
 		color: black;
 		padding: 5px;
 		border-radius: 0.2rem;
-		/* left: 10px; */
-		/* transform: translateY(-50%); */
-		transform: translate(1rem, 1rem);
 		z-index: 100;
-		max-width: 250px;
+		min-width: 200px;
+		max-width: 300px;
 		& p {
 			margin: 0;
 		}
-		/* & p:first-child {
-			margin-top: 0;
-		} */
+	}
+
+	#overlay-closer {
+		float: right;
 		& button {
 			background: none;
 			display: block;
@@ -566,7 +531,6 @@
 			padding: 0;
 			margin: 0;
 			border-radius: 0.2rem;
-			line-height: 0.4em;
 			& svg {
 				height: 1rem;
 				width: 1rem;
@@ -579,7 +543,8 @@
 			}
 		}
 	}
-	/* .ol-popup:before {
+
+	/* #overlay:before {
 		top: 50%;
 		border: solid 10px transparent;
 		content: ' ';
@@ -592,19 +557,6 @@
 		margin-left: -20px;
 		margin-top: -10px;
 	} */
-	/* .ol-popup:before {
-		border-top-color: var(--text-color);
-		border-width: 11px;
-		left: 48px;
-		margin-left: -11px;
-	} */
-	.ol-popup-closer {
-		text-decoration: none;
-		position: relative;
-		float: right;
-		/* top: 0.6rem;
-		right: 0.6rem; */
-	}
 
 	#controls {
 		grid-column: 1 / 2;
@@ -651,7 +603,6 @@
 				text-decoration: none;
 				outline: none;
 				color: yellow;
-				/* background: rgba(0, 0, 0, 0.2); */
 			}
 		}
 	}

@@ -74,7 +74,7 @@
 				</button>
 			</div>
 		{:else}
-			<div class="grid-item start">Click a location to start a slide show</div>
+			<div class="grid-item start">Click or tap a location</div>
 		{/if}
 		<div class:panel-overview={$overview} class="grid-item panel button">
 			<button on:click={togglePanel}>
