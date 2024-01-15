@@ -7,9 +7,12 @@
 		selectedSlideData as selectedSlide,
 		georefAnnotations as newWarpedMapSource,
 		vectorLayers as newVectorSource,
-		black
+		black,
+		textColor,
+		overview
 	} from '$lib/shared/stores/selectedSlide.js'
 	import { panel } from '$lib/shared/stores/componentStates.js'
+	import { close } from '$lib/shared/svgs.js'
 
 	// Shared functions
 	import { calculateExtent, sleep, hexToRGBA, stringToHTML } from '$lib/shared/utils.js'
@@ -29,6 +32,9 @@
 	import Point from 'ol/geom/Point.js'
 	import Feature from 'ol/Feature.js'
 	import { unByKey } from 'ol/Observable'
+	import Overlay from 'ol/Overlay.js'
+	import { toLonLat } from 'ol/proj.js'
+	import { toStringHDMS } from 'ol/coordinate.js'
 
 	// Types & CSS
 	import type { Extent, Coordinate } from 'ol/extent'
@@ -69,12 +75,17 @@
 
 	let pointerMoveKey: EventsKey | undefined = undefined
 	let singleClickKey: EventsKey | undefined = undefined
+	let overlayKey: EventsKey | undefined = undefined
 
 	let innerWidth: number
 
+	let overlay: Overlay
+	let overlayElement: HTMLElement
+	let overlayContents: string
+
 	let tooltip: string = 'hidden'
-	let tooltipContents: string = ''
 	let tooltipCoords: number[] = [0, 0]
+	let tooltipContents: string = ''
 
 	const addControls = () => {
 		const collection = new Collection()
@@ -91,6 +102,10 @@
 		})
 		collection.extend([zoomIn, rotate])
 		return collection
+	}
+
+	const closeOverlay = () => {
+		overlay.setPosition(undefined)
 	}
 
 	// Add Mapbox background layer
@@ -181,6 +196,8 @@
 	$: {
 		// Add && !animating to wait for animation
 		if (vectorLayer && $newVectorSource) {
+			// Remove overlays
+			closeOverlay()
 			if ($newVectorSource.size) {
 				addVectorSource($newVectorSource)
 			} else {
@@ -263,6 +280,7 @@
 		if (pointerMoveKey && singleClickKey) {
 			unByKey(pointerMoveKey)
 			unByKey(singleClickKey)
+			unByKey(overlayKey)
 			console.log('Removed listeners')
 		}
 		let removedCount = 0
@@ -339,6 +357,7 @@
 
 	function createListeners() {
 		pointerMoveKey = map.on('pointermove', function (event) {
+			// https://stackoverflow.com/questions/60511753/why-isnt-openlayers-detecting-touch-events-from-my-laptop
 			vectorLayer.getFeatures(event.pixel).then(function (features) {
 				let feature = features.length ? features[0] : undefined
 				if (feature == undefined || !feature.getProperties().href) {
@@ -354,13 +373,14 @@
 				if (feature && feature.getProperties().href) {
 					feature.setStyle(selectedStyles)
 					map.getTargetElement().style.cursor = 'pointer'
-					// Overlay
-					const label = feature.getProperties().label || feature.getProperties().collectionLabel
-					if (label) {
-						tooltipCoords = event.pixel
-						tooltip = 'visible'
-						tooltipContents = label
-					}
+					// // Overlay
+					// const properties = feature.getProperties()
+					// const label = properties.label || properties.collectionLabel
+					// if (label) {
+					// 	tooltipCoords = event.pixel
+					// 	tooltip = 'visible'
+					// 	tooltipContents = label
+					// }
 				}
 			})
 		})
@@ -371,13 +391,33 @@
 				if (feature) {
 					const properties = feature.getProperties()
 					if (properties.href) {
-						tooltip = 'hidden'
-						map.getTargetElement().style.cursor = ''
-						window.location.hash = properties.href
+						// tooltip = 'hidden'
+						// map.getTargetElement().style.cursor = ''
+						// window.location.hash = properties.href
+
+						const coordinate = event.coordinate
+						// const hdms = toStringHDMS(toLonLat(coordinate))
+						const label = properties.label || properties.collectionLabel
+						const hrefArg = properties.href
+						const hrefDoc = properties.href.replace('argumentation', 'documentation')
+						// overlayContents = `<h1>${label}</h1><a href="${hrefDoc}">Open in Documentation</a><br><a href="${hrefArg}">Open in Argumentation</a>`
+						overlayContents = properties
+						overlay.setPosition(coordinate)
+						console.log('Positioned overlay')
 					}
-				}
+				} else closeOverlay()
 			})
 		})
+
+		// overlayKey = map.on('singleclick', function (event) {
+		// 	const coordinate = event.coordinate
+		// 	const hdms = toStringHDMS(toLonLat(coordinate))
+
+		// 	overlayContents = '<p>You clicked here:</p><code>' + hdms + '</code>'
+		// 	overlay.setPosition(coordinate)
+		// 	console.log('Positioned overlay')
+		// })
+
 		console.log('Added listeners')
 	}
 
@@ -406,6 +446,15 @@
 			zIndex: 4
 		})
 
+		overlay = new Overlay({
+			element: overlayElement,
+			autoPan: {
+				animation: {
+					duration: 250
+				}
+			}
+		})
+
 		view = new olView()
 
 		map = new olMap({
@@ -418,6 +467,7 @@
 				vectorLayer
 			],
 			target: 'ol',
+			overlays: [overlay],
 			controls: addControls()
 		})
 	})
@@ -425,13 +475,40 @@
 
 <svelte:window bind:innerWidth />
 
-<div id="ol" class="map" />
+<div id="ol" class="map" style="--text-color: {$textColor}" />
 
 <div
 	id="tooltip"
 	style="visibility: {tooltip}; left: {tooltipCoords[0]}px; top: {tooltipCoords[1]}px"
 >
 	{tooltipContents}
+</div>
+
+<div id="overlay" class="ol-popup" bind:this={overlayElement}>
+	<button on:click={closeOverlay} id="popup-closer" class="ol-popup-closer"
+		><body>{@html close}</body></button
+	>
+	<div id="popup-content">
+		{#if overlayContents}
+			{#if overlayContents.href}
+				<p>{overlayContents.label || overlayContents.collectionLabel}</p>
+				<p class="overlay-link">
+					<a on:click={closeOverlay} href={overlayContents.href}
+						><i>
+							Open in
+							{#if overlayContents.href.includes('argumentation')}
+								Argumentation
+							{:else if overlayContents.href.includes('documentation')}
+								Documentation
+							{/if}
+						</i></a
+					>
+				</p>
+			{:else}
+				<p>{overlayContents.label || overlayContents.collectionLabel}</p>
+			{/if}
+		{/if}
+	</div>
 </div>
 
 <div id="controls" class:black={$black} />
@@ -451,14 +528,82 @@
 		display: inline-block;
 		height: auto;
 		width: auto;
+		max-width: 250px;
 		z-index: 100;
-		background-color: rgba(255, 255, 0, 1);
+		background-color: yellow;
 		color: black;
-		text-align: center;
+		text-align: left;
 		border-radius: 0.2rem;
 		padding: 5px;
 		transform: translate(1rem, 1rem);
 		pointer-events: none;
+	}
+
+	.ol-popup {
+		position: relative;
+		background-color: yellow;
+		color: black;
+		padding: 5px;
+		border-radius: 0.2rem;
+		/* left: 10px; */
+		/* transform: translateY(-50%); */
+		transform: translate(1rem, 1rem);
+		z-index: 100;
+		max-width: 250px;
+		& p {
+			margin: 0;
+		}
+		/* & p:first-child {
+			margin-top: 0;
+		} */
+		& button {
+			background: none;
+			display: block;
+			border: none;
+			color: black;
+			width: 1rem;
+			height: 1rem;
+			padding: 0;
+			margin: 0;
+			border-radius: 0.2rem;
+			line-height: 0.4em;
+			& svg {
+				height: 1rem;
+				width: 1rem;
+			}
+			&:hover {
+				color: black;
+			}
+			&:active {
+				color: black;
+			}
+		}
+	}
+	/* .ol-popup:before {
+		top: 50%;
+		border: solid 10px transparent;
+		content: ' ';
+		border-right-color: yellow;
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		left: 0px;
+		margin-left: -20px;
+		margin-top: -10px;
+	} */
+	/* .ol-popup:before {
+		border-top-color: var(--text-color);
+		border-width: 11px;
+		left: 48px;
+		margin-left: -11px;
+	} */
+	.ol-popup-closer {
+		text-decoration: none;
+		position: relative;
+		float: right;
+		/* top: 0.6rem;
+		right: 0.6rem; */
 	}
 
 	#controls {
@@ -475,7 +620,7 @@
 			& button {
 				color: black;
 				&:hover {
-					color: rgba(255, 255, 114);
+					color: yellow;
 				}
 			}
 		}
@@ -505,7 +650,7 @@
 			&:focus {
 				text-decoration: none;
 				outline: none;
-				color: rgba(255, 255, 114);
+				color: yellow;
 				/* background: rgba(0, 0, 0, 0.2); */
 			}
 		}
