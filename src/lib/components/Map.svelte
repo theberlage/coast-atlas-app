@@ -504,6 +504,8 @@
 
 	#overlay {
 		position: absolute;
+		min-width: 200px;
+		max-width: 300px;
 	}
 
 	#overlay-contents {
@@ -512,8 +514,6 @@
 		padding: 5px;
 		border-radius: 0.2rem;
 		z-index: 100;
-		min-width: 200px;
-		max-width: 300px;
 		& p {
 			margin: 0;
 		}
