@@ -4,13 +4,12 @@
 		selectedSlideShow as slideshow,
 		selectedSlideShowCount as count,
 		selectedSlideIndex as index,
-		textColor
+		textColor,
+		overview
 	} from '$lib/shared/stores/selectedSlide.js'
 	import { panel } from '$lib/shared/stores/componentStates.js'
 	import { next, prev } from '$lib/shared/svgs.js'
 	import { fly, slide as slideTransition, fade } from 'svelte/transition'
-
-	$: overview = $count && $count > 1 ? false : true
 
 	const togglePanel = () => panel.toggle()
 
@@ -61,8 +60,8 @@
 <svelte:window on:keydown={onKeyDown} />
 
 <div class:control-panel={!$panel} class="control" style="--text-color: {$textColor}">
-	<div class:overview-container={overview} class="grid-container">
-		{#if !overview}
+	<div class:overview-container={$overview} class="grid-container">
+		{#if !$overview}
 			<div class="grid-item prev button">
 				<button on:click={() => goPrev()}>
 					<body>{@html prev}</body>
@@ -77,7 +76,7 @@
 		{:else}
 			<div class="grid-item start">Click a location to start a slide show</div>
 		{/if}
-		<div class:panel-overview={overview} class="grid-item panel button">
+		<div class:panel-overview={$overview} class="grid-item panel button">
 			<button on:click={togglePanel}>
 				<body>
 					{#if $panel}Hide{:else}Show{/if} description
