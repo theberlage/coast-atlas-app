@@ -319,7 +319,7 @@
 		let selectable = false
 		vectorSource.forEachFeature(function (feature) {
 			let properties = feature.getProperties()
-			if (properties.label) {
+			if (properties.label && properties.href) {
 				selectable = true
 				feature.setStyle(selectableStyles)
 
