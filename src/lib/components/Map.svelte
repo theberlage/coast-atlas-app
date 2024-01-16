@@ -341,6 +341,9 @@
 				// extraFeature.setStyle(berlageIcon)
 				// vectorSource.addFeature(extraFeature)
 			} else {
+				if (properties.label) {
+					selectable = true
+				}
 				const customStyle = parseCustomFeatureStyle(properties)
 				feature.setStyle(customStyle)
 			}
@@ -357,7 +360,9 @@
 				if (feature == undefined || !properties.label) {
 					vectorSource.forEachFeature(function (feature) {
 						let properties = feature.getProperties()
-						if (properties.label) {
+						if (properties.href) {
+							feature.setStyle(selectableStyles)
+						} else if (properties.label) {
 							const customStyle = parseCustomFeatureStyle(properties)
 							feature.setStyle(customStyle)
 						}
