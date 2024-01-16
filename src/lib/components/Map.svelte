@@ -319,7 +319,7 @@
 		let selectable = false
 		vectorSource.forEachFeature(function (feature) {
 			let properties = feature.getProperties()
-			if (properties.href) {
+			if (properties.label) {
 				selectable = true
 				feature.setStyle(selectableStyles)
 
@@ -353,16 +353,18 @@
 			// https://stackoverflow.com/questions/60511753/why-isnt-openlayers-detecting-touch-events-from-my-laptop
 			vectorLayer.getFeatures(event.pixel).then(function (features) {
 				let feature = features.length ? features[0] : undefined
-				if (feature == undefined || !feature.getProperties().href) {
+				let properties = (feature && feature.getProperties()) || undefined
+				if (feature == undefined || !properties.label) {
 					vectorSource.forEachFeature(function (feature) {
 						let properties = feature.getProperties()
-						if (properties.href) {
-							feature.setStyle(selectableStyles)
+						if (properties.label) {
+							const customStyle = parseCustomFeatureStyle(properties)
+							feature.setStyle(customStyle)
 						}
 					})
 					map.getTargetElement().style.cursor = ''
 				}
-				if (feature && feature.getProperties().href) {
+				if (feature && properties.label) {
 					feature.setStyle(selectedStyles)
 					map.getTargetElement().style.cursor = 'pointer'
 				}
@@ -374,7 +376,7 @@
 				const feature = features.length ? features[0] : undefined
 				if (feature) {
 					const properties = feature.getProperties()
-					if (properties.href) {
+					if (properties.label) {
 						map.getTargetElement().style.cursor = ''
 						// const hdms = toStringHDMS(toLonLat(coordinate))
 						overlayContents = properties
@@ -464,7 +466,7 @@
 			<div id="overlay-content">
 				{#if overlayContents}
 					{#if overlayContents.href}
-						<p>{overlayContents.label || overlayContents.collectionLabel}</p>
+						<p>{overlayContents.label}</p>
 						<p class="overlay-link">
 							<a on:click={closeOverlay} href={overlayContents.href}
 								><i>
@@ -482,7 +484,7 @@
 							>
 						</p>
 					{:else}
-						<p>{overlayContents.label || overlayContents.collectionLabel}</p>
+						<p>{overlayContents.label}</p>
 					{/if}
 				{/if}
 			</div>
