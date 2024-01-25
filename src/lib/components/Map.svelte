@@ -107,6 +107,14 @@
 		// overlay.setPosition(undefined)
 	}
 
+	// $: {
+	// 	if (view) {
+	// 		map.on('moveend', () => {
+	// 			console.log(view.getZoom(), toLonLat(view.getCenter()))
+	// 		})
+	// 	}
+	// }
+
 	// Add Mapbox background layer
 	$: {
 		if (map && $mapboxSettings) {
@@ -536,11 +544,12 @@
 			display: block;
 			border: none;
 			color: black;
-			width: 1rem;
-			height: 1rem;
 			padding: 0;
 			margin: 0;
+			height: 1rem;
+			width: 1rem;
 			border-radius: 0.2rem;
+			line-height: 0.4rem;
 			& svg {
 				height: 0.8rem;
 				width: 0.8rem;
