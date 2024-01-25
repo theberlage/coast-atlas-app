@@ -522,8 +522,11 @@
 	}
 
 	a.overlay-link {
-		border-bottom: 1px solid var(--text-color);
+		border-bottom: 1px solid black;
 		color: black;
+		&:hover {
+			border-bottom: none;
+		}
 	}
 
 	#overlay-closer {
@@ -543,10 +546,10 @@
 				width: 0.8rem;
 			}
 			&:hover {
-				color: black;
+				background: rgba(0, 0, 0, 0.2);
 			}
 			&:active {
-				color: black;
+				background: rgba(0, 0, 0, 0.2);
 			}
 		}
 	}

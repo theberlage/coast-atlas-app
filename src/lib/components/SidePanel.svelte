@@ -137,6 +137,13 @@
 	}
 	.body {
 		margin: 0rem 1rem;
+		& a {
+			border-bottom: 1px solid var(--text-color);
+			color: var(--text-color);
+			&:hover {
+				border-bottom: none;
+			}
+		}
 	}
 	.sub-title {
 		text-transform: uppercase;
