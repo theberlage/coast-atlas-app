@@ -1,0 +1,93 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": { "label": "Facades of the seventeenth century buildings on the east side of Vijzelstraat" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.89204,
+                    52.36265
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Shops on the ground floor of the seventeenth century buildings"},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.892109,
+                    52.362486
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Commercial arcade in Amstelstein" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.89182,
+                    52.362672
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Commercial space on Amstelstein's ground floor" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.891533,
+                    52.362468
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "3 bedroom apartments in Amstelstein" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.891359,
+                    52.362614
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Amstelstein apartment building designed by Jo van der Mey, built in 1928" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.891747,
+                    52.363039
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Electric tramway envisioned in K. de Bazel's plan" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.891743,
+                    52.362155
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Vijzelstraat's widened street profile designed by K. de Bazel" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.891644,
+                    52.362021
+                ]
+            }
+        }
+    ]
+}

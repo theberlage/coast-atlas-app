@@ -1,0 +1,115 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": { "label": "Planned greenery after demolition in the twentieth century" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.906932,
+                    52.371487
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Nieuwe Uilenburgerstraat 2-68, social housing block by Johannes Hendrik"},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.906911,
+                    52.371547
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Courtyard space occupied by storage, present" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.906136,
+                    52.371312
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Residential houses existing from the seventeenth to the nineteenth century" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.906144,
+                    52.371076
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Courtyard created by splitting the warehouse structure during the renovation" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.906658,
+                    52.370932
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Seventeenth-century warehouses, renovated in the 1980s" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.90676,
+                    52.370778
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Jewish businesses and market, existing from the seventeenth to the nineteenth century" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.905908,
+                    52.370807
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Demolition following Woningwet 1901 in the twentieth century" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.905746,
+                    52.371128
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Nieuwe Uilenburgerstraat, constructed in the 1920s" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.906844,
+                    52.371282
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "label": "Boathouse, an alternative domestic space, 2000s" },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.9067797,
+                    52.3717217
+                ]
+            }
+        }
+    ]
+}
