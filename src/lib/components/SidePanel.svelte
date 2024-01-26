@@ -8,8 +8,7 @@
 	import { panel } from '$lib/shared/stores/componentStates.js'
 	import { hexToRGBA } from '$lib/shared/utils.js'
 	import { page } from '$app/stores'
-	import { fade, fly } from 'svelte/transition'
-	import { angleLeft, angleRight } from '$lib/shared/svgs.js'
+	import { fly } from 'svelte/transition'
 
 	let data: any
 	let path: string
@@ -21,8 +20,7 @@
 	let innerWidth: number
 	let innerHeight: number
 	$: flyX = innerWidth < 700 ? 0 : 400
-	$: flyY = innerWidth < 700 ? '100vh' : 0
-	$: toggleTranslateX = $panel ? 0 : 400
+	$: flyY = innerWidth < 700 ? innerHeight : 0
 
 	$: if (innerWidth > 700) {
 		panel.set(true)
@@ -46,7 +44,7 @@
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
-<div class="toggle" class:toggle-move={!$panel}>
+<div class="toggle" style="--text-color: {$textColor}" class:toggle-move={!$panel}>
 	<button class="toggle-button" on:click={togglePanel}>
 		<body>
 			<svg
@@ -143,20 +141,20 @@
 
 <style>
 	.toggle {
-		grid-column: 3 / 4;
+		grid-column: panel;
 		grid-row: map;
-		width: auto;
 		z-index: 4;
-		align-self: center;
-		pointer-events: none;
+		width: 2rem;
+		height: 5rem;
+		margin: auto -2rem;
+		border-radius: 1rem 0 0 1rem;
+		background: rgba(255, 255, 255, 0.9);
 	}
 	.toggle-button {
-		float: right;
-		width: 2rem;
-		height: 4rem;
-		pointer-events: auto;
-		background: rgba(255, 255, 255, 0.9);
+		width: 100%;
+		height: 100%;
 		line-height: 0.4em;
+		background: none;
 		border: none;
 		border-radius: 1rem 0 0 1rem;
 		color: var(--text-color);
@@ -165,15 +163,15 @@
 			height: 1.5rem;
 		}
 		&:hover {
-			color: rgba(255, 255, 114);
+			background: rgba(0, 0, 0, 0.2);
 		}
 		&:active {
-			color: rgba(255, 255, 114);
+			background: rgba(0, 0, 0, 0.2);
 		}
 	}
 	.toggle-move {
-		transform: translateX(400px);
-		transition: 200ms;
+		justify-self: end;
+		margin: auto 0rem;
 	}
 	.svg-move {
 		transform: rotate(0.5turn);
@@ -255,30 +253,25 @@
 	}
 	@media all and (max-width: 700px) {
 		.panel-grid-container {
-			grid-template-rows: 1 / 3;
 			border-radius: 1rem 1rem 0 0;
 			margin: 0.4rem 1rem 4rem 1rem;
 		}
 		.toggle {
-			grid-column: panel;
-			grid-row: header;
-			align-self: end;
-			margin: 0 auto;
+			align-self: start;
+			margin: -1.6rem auto 0;
+			height: 2rem;
+			width: 5rem;
+			border-radius: 1rem 1rem 0 0;
 		}
 		.toggle-button {
-			float: none;
-			width: 4rem;
-			height: 2rem;
 			border-radius: 1rem 1rem 0 0;
-			transform: translateY(0.4rem);
 		}
 		.toggle-svg {
 			transform: rotate(0.25turn);
 		}
 		.toggle-move {
-			transform: translateX(0);
-			transform: translateY(100vh) translateY(-8.4rem);
-			transition: 200ms;
+			align-self: end;
+			margin: 0rem auto 5rem;
 		}
 		.svg-move {
 			transform: rotate(0.75turn);
