@@ -144,9 +144,9 @@
 		grid-column: panel;
 		grid-row: map;
 		z-index: 4;
-		width: 2rem;
+		width: 2.4rem;
 		height: 5rem;
-		margin: auto -2rem;
+		margin: auto -2.4rem;
 		border-radius: 1rem 0 0 1rem;
 		background: rgba(255, 255, 255, 0.9);
 	}
@@ -159,8 +159,8 @@
 		border-radius: 1rem 0 0 1rem;
 		color: var(--text-color);
 		& svg {
-			width: 1.5rem;
-			height: 1.5rem;
+			width: 2rem;
+			height: 2rem;
 		}
 		&:hover {
 			background: rgba(0, 0, 0, 0.2);
@@ -258,8 +258,8 @@
 		}
 		.toggle {
 			align-self: start;
-			margin: -1.6rem auto 0;
-			height: 2rem;
+			margin: -2rem auto 0;
+			height: 2.4rem;
 			width: 5rem;
 			border-radius: 1rem 1rem 0 0;
 		}
