@@ -77,7 +77,7 @@
 				</button>
 			</div>
 		{:else}
-			<div class="grid-item start">Select a location</div>
+			<div class="grid-item start">Select a location on the map</div>
 		{/if}
 		<div class:panel-overview={$overview} class="grid-item panel title">
 			{title}

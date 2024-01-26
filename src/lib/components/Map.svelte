@@ -479,13 +479,10 @@
 							<a class="overlay-link" on:click={closeOverlay} href={overlayContents.href}>
 								{#if $overview}
 									Start slideshow
-								{:else}
-									Open in
-									{#if overlayContents.href.includes('argumentation')}
-										Argumentation
-									{:else if overlayContents.href.includes('documentation')}
-										Documentation
-									{/if}
+								{:else if overlayContents.href.includes('argumentation')}
+									Go to slide
+								{:else if overlayContents.href.includes('documentation')}
+									Open in Documentation
 								{/if}
 							</a>
 						</p>
