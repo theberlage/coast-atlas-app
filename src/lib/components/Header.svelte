@@ -68,6 +68,7 @@
 
 	.home-button {
 		height: 2rem;
+		padding: 0 0.25rem;
 		& body {
 			font-size: 1.2rem;
 		}
