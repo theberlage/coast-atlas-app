@@ -8,13 +8,15 @@
 		textColor,
 		overview
 	} from '$lib/shared/stores/selectedSlide.js'
-	import { panel } from '$lib/shared/stores/componentStates.js'
+	import { panel, menu, bear } from '$lib/shared/stores/componentStates.js'
 	import { next, prev } from '$lib/shared/svgs.js'
 	import { fly, slide as slideTransition, fade } from 'svelte/transition'
 
 	$: title = $data?.frontmatter.meta.heading
 
 	const togglePanel = () => panel.toggle()
+	const toggleMenu = () => menu.toggle()
+	const toggleBear = () => bear.toggle()
 
 	function goNext() {
 		if ($index < $count - 1) {
@@ -41,6 +43,8 @@
 	// right = 39
 	// left = 37
 	// esc = 27
+	// m = 77
+	// b = 66
 
 	function onKeyDown(e: any) {
 		switch (e.keyCode) {
@@ -53,8 +57,14 @@
 			case 39:
 				goNext()
 				break
+			case 77:
+				toggleMenu()
+				break
 			case 80:
 				togglePanel()
+				break
+			case 66:
+				toggleBear()
 				break
 		}
 	}
