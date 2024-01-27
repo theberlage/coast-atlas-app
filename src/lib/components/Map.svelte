@@ -133,7 +133,7 @@
 	$: {
 		// Todo: use view.fit(extent, {padding, duration})
 		// https://openlayers.org/en/latest/apidoc/module-ol_View-View.html#fit
-		if (view && innerWidth > 600) {
+		if (view && innerWidth > 700) {
 			view.padding = $panel ? [0, 400, 0, 0] : [0, 0, 0, 0]
 		} else if (view) {
 			view.padding = [0, 0, 0, 0]
