@@ -10,7 +10,7 @@
 	import { hexToRGBA } from '$lib/shared/utils.js'
 	import { page } from '$app/stores'
 	import { fly } from 'svelte/transition'
-	import { gcpMarker } from '$lib/shared/svgs.js'
+	import { gcpMarker, allmapsLogo } from '$lib/shared/svgs.js'
 
 	let data: any
 	let path: string
@@ -79,7 +79,9 @@
 				<!-- <p class="heading">
 					{data.meta.heading}
 				</p> -->
-				{@html html}
+				<div class="html">
+					{@html html}
+				</div>
 				{#if legend}
 					<span class="sub-title">Legend</span>
 					<dl class="legend">
@@ -117,14 +119,18 @@
 									<li>
 										{annotation.label}
 										{#if annotation.attribution?.name && annotation.attribution?.url}
-											<a href={annotation.attribution.url}>{annotation.attribution.name}</a>
+											<a class="link" href={annotation.attribution.url}
+												>{annotation.attribution.name}</a
+											>
 										{/if}
 										<a
+											class="allmaps-link"
+											title="Open in Allmaps"
 											href={allmapsViewer +
 												$page.url.origin +
 												path +
 												'annotations/' +
-												annotation.annotation}>Open in Allmaps</a
+												annotation.annotation}>{@html allmapsLogo}</a
 										>
 									</li>
 								{/if}
@@ -135,7 +141,7 @@
 								<li>
 									{xyz.label}
 									{#if xyz.attribution?.name && xyz.attribution?.url}
-										<a href={xyz.attribution.url}>{xyz.attribution.name}</a>
+										<a class="link" href={xyz.attribution.url}>{xyz.attribution.name}</a>
 									{/if}
 								</li>
 							{/if}
@@ -157,6 +163,17 @@
 		margin: auto -2.4rem;
 		border-radius: 1rem 0 0 1rem;
 		background: rgba(255, 255, 255, 0.9);
+	}
+	a.allmaps-link {
+		border: none;
+		display: inline-block;
+		width: 1rem;
+		height: 1rem;
+		transform: translateY(0.2rem);
+		& svg {
+			width: 100%;
+			height: 100%;
+		}
 	}
 	.toggle-button {
 		width: 100%;
@@ -200,13 +217,21 @@
 	}
 	ul {
 		font-size: 0.8rem;
+		line-height: 1.2rem;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
 	}
 	ul > li {
-		padding-bottom: 1rem;
+		padding: 0.8rem 0 0 0;
+		margin: 0;
 	}
-	ul > li > a {
+	a.link {
 		border-bottom: 1px solid var(--text-color);
 		color: var(--text-color);
+		&:hover {
+			border-bottom: none;
+		}
 	}
 	.content {
 		grid-column: 1 / 2;
@@ -222,13 +247,15 @@
 	}
 	.body {
 		margin: 0rem 1rem;
-		& > :first-child {
-			margin-top: 0 !important;
-			padding-top: 0 !important;
-		}
 		& > :last-child {
 			margin-bottom: 0 !important;
 			padding-bottom: 0 !important;
+		}
+	}
+	.html {
+		& > :first-child {
+			margin-top: 0 !important;
+			padding-top: 0 !important;
 		}
 		& a {
 			border-bottom: 1px solid var(--text-color);
