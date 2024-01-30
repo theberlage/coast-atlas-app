@@ -119,12 +119,13 @@
 									<li>
 										{annotation.label}
 										{#if annotation.attribution?.name && annotation.attribution?.url}
-											<a class="link" href={annotation.attribution.url}
+											<a class="link" target="_blank" href={annotation.attribution.url}
 												>{annotation.attribution.name}</a
 											>
 										{/if}
 										<a
 											class="allmaps-link"
+											target="_blank"
 											title="Open in Allmaps"
 											href={allmapsViewer +
 												$page.url.origin +
@@ -141,7 +142,9 @@
 								<li>
 									{xyz.label}
 									{#if xyz.attribution?.name && xyz.attribution?.url}
-										<a class="link" href={xyz.attribution.url}>{xyz.attribution.name}</a>
+										<a class="link" target="_blank" href={xyz.attribution.url}
+											>{xyz.attribution.name}</a
+										>
 									{/if}
 								</li>
 							{/if}
