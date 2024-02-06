@@ -38,7 +38,7 @@
 
 <svelte:window on:mousemove={(event) => setMarker(event)} />
 
-<div class="menu" transition:fade>
+<div class="menu" transition:fade={{ duration: 600 }}>
 	<div class="container">
 		<div class="logo">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 249">
@@ -110,11 +110,8 @@
 			<ul class="chapters">
 				{#each [...$slideData.keys()] as chapter}
 					<li>
-						<a
-							on:click={toggleMenu}
-							on:mouseenter={() => (hover = true)}
-							on:mouseleave={() => (hover = false)}
-							href="#/{chapter}">{chapter.charAt(0).toUpperCase() + chapter.slice(1)}</a
+						<a on:click={toggleMenu} on:click={() => (hover = true)} href="#/{chapter}"
+							>{chapter.charAt(0).toUpperCase() + chapter.slice(1)}</a
 						>
 					</li>
 					<ul class="slideshows">
@@ -122,8 +119,7 @@
 							<li>
 								<a
 									on:click={toggleMenu}
-									on:mouseenter={() => (hover = true)}
-									on:mouseleave={() => (hover = false)}
+									on:click={() => (hover = true)}
 									href="#/{chapter}/{slideshow}/1"
 									>{slideshow.charAt(0).toUpperCase() + slideshow.slice(1)}</a
 								>
