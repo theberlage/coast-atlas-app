@@ -48,6 +48,7 @@
 
 	function onKeyDown(e: any) {
 		switch (e.keyCode) {
+			case 38:
 			case 27:
 				goHome()
 				break
@@ -60,6 +61,7 @@
 			case 77:
 				toggleMenu()
 				break
+			case 40:
 			case 80:
 				togglePanel()
 				break
