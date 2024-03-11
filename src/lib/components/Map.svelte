@@ -297,7 +297,7 @@
 			unByKey(pointerMoveKey)
 			unByKey(singleClickKey)
 			unByKey(overlayKey)
-			console.log('Removed listeners')
+			// console.log('Removed listeners')
 		}
 		let removedCount = 0
 		let addedCount = 0
@@ -402,7 +402,7 @@
 						const coordinate = event.coordinate
 						overlay.setPosition(coordinate)
 						overlayBoolean = true
-						console.log('Positioned overlay')
+						// console.log('Positioned overlay')
 					} else closeOverlay()
 				} else closeOverlay()
 			})
@@ -417,7 +417,7 @@
 		// 	console.log('Positioned overlay')
 		// })
 
-		console.log('Added listeners')
+		// console.log('Added listeners')
 	}
 
 	onMount(async () => {

@@ -6,18 +6,6 @@ export let selectedChapter = writable<string | undefined>(undefined)
 export let selectedSlideShow = writable<string | undefined>(undefined)
 export let selectedSlideIndex = writable<number>(0)
 
-selectedChapter.subscribe((value) => {
-	console.log('selectedChapter', value)
-})
-
-selectedSlideShow.subscribe((value) => {
-	console.log('selectedSlideShow', value)
-})
-
-selectedSlideIndex.subscribe((value) => {
-	console.log('selectedSlideIndex', value)
-})
-
 const selectedChapterData = derived(
 	[slideData, selectedChapter],
 	([$slideData, $selectedChapter]) => {
@@ -182,22 +170,36 @@ export const mapBoxLayer = derived(
 	}
 )
 
-selectedSlideShowCount.subscribe((value) => {
-	console.log('slideShowCount', value)
-})
+// Uncomment for debugging
 
-selectedSlideData.subscribe((value) => {
-	console.log('selectedSlideData', value)
-})
+// selectedChapter.subscribe((value) => {
+// 	console.log('selectedChapter', value)
+// })
 
-georefAnnotations.subscribe((value) => {
-	console.log('georefAnnotations', value)
-})
+// selectedSlideShow.subscribe((value) => {
+// 	console.log('selectedSlideShow', value)
+// })
 
-vectorLayers.subscribe((value) => {
-	console.log('vectorLayers', value)
-})
+// selectedSlideIndex.subscribe((value) => {
+// 	console.log('selectedSlideIndex', value)
+// })
 
-mapBoxLayer.subscribe((value) => {
-	console.log('mapBoxLayer', value)
-})
+// selectedSlideShowCount.subscribe((value) => {
+// 	console.log('slideShowCount', value)
+// })
+
+// selectedSlideData.subscribe((value) => {
+// 	console.log('selectedSlideData', value)
+// })
+
+// georefAnnotations.subscribe((value) => {
+// 	console.log('georefAnnotations', value)
+// })
+
+// vectorLayers.subscribe((value) => {
+// 	console.log('vectorLayers', value)
+// })
+
+// mapBoxLayer.subscribe((value) => {
+// 	console.log('mapBoxLayer', value)
+// })

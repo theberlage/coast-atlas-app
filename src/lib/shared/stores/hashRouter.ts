@@ -18,7 +18,7 @@ export const hash = writable<string | undefined>(undefined)
 hash.subscribe((value) => {
 	if (value !== undefined) {
 		parseHash(value)
-		console.log('!---! NEW HASH !---!', value, '!---!')
+		// console.log('!---! NEW HASH !---!', value, '!---!')
 	}
 })
 

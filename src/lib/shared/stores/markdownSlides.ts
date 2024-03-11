@@ -57,6 +57,6 @@ function groupSlides() {
 
 const groupedSlides = groupSlides()
 
-console.log('groupedSlides', groupedSlides)
+// console.log('groupedSlides', groupedSlides)
 
 export const slideData = readable<Map<string, Map<string, Array<Slide>>>>(groupedSlides)
