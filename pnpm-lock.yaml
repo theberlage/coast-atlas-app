@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@allmaps/openlayers':
-    specifier: 1.0.0-beta.45
-    version: 1.0.0-beta.45
+    specifier: 1.0.0-beta.66
+    version: 1.0.0-beta.66
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
@@ -93,77 +93,82 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@allmaps/annotation@1.0.0-beta.19:
-    resolution: {integrity: sha512-tk56HtGTfcpAdO0p26g5FEhWzYpK0LyzvSE5ckBZFixntg8jT6x49J17z/sXsXTLON6uimGuizOlj1cYpPreDQ==}
+  /@allmaps/annotation@1.0.0-beta.29:
+    resolution: {integrity: sha512-dVihINgL7pAALCnPupIBqUiwykPVPV7I6SRZUT/A20saH+/G4TTuCUC0xsDxncvn0TH1tQQtIfjV9c3WSt8pog==}
     dependencies:
       zod: 3.22.4
     dev: false
 
-  /@allmaps/id@1.0.0-beta.20:
-    resolution: {integrity: sha512-Gf2ly9WpXSpZ48muNK0g6a82bZd6f2GUcxmIOUS9LBkB1UDOOOKutrZ1yXwQgmaKDld1eg1oRFnWS442bhOsLA==}
+  /@allmaps/id@1.0.0-beta.29:
+    resolution: {integrity: sha512-V0cL0V0sk9Eqb7VlBj/1KufHiJebPTzF2/1YOklCsWJvU8TokJ3s17WWMQO+2srj0mdIRRXqIYVDWlzv9K3AoA==}
     engines: {node: '>=v19.0.0'}
+    dependencies:
+      '@allmaps/types': 1.0.0-beta.14
     dev: false
 
-  /@allmaps/iiif-parser@1.0.0-beta.28:
-    resolution: {integrity: sha512-Ht4WDuWNvjWTGI7aH9NfhYi9CKnh5u+zNMNWoROryonN8cAFXR0aWJUpmP4PBNfbI8YIM7sgjJYSVg0fyangdw==}
+  /@allmaps/iiif-parser@1.0.0-beta.39:
+    resolution: {integrity: sha512-u6s9IXm61YbDqVkHYOL2IcOYVb0of8GPIRFOkZnOqzc6sgB67IbpdPwFIp5gQA8Cvvy9qv4oKHOv8c4L37tIXA==}
     dependencies:
+      '@allmaps/types': 1.0.0-beta.14
       zod: 3.22.4
     dev: false
 
-  /@allmaps/openlayers@1.0.0-beta.45:
-    resolution: {integrity: sha512-2SbjAOZmB20BlRT3i8rXMRgKlVAgORucU5aMG4P9kXajoTxsU4wt1f4p6pquZ3gydSgUGioXIZhGCE+tROOaJg==}
+  /@allmaps/openlayers@1.0.0-beta.66:
+    resolution: {integrity: sha512-chbhZP+q+FRdNIgve4c9S30PM79DapqbDIf46NiTywPvAZ1Uayydhrt3zPaQrACCHbMj9XeBbXJyYsa6KwyMTA==}
     dependencies:
-      '@allmaps/render': 1.0.0-beta.42
-      '@allmaps/stdlib': 1.0.0-beta.17
+      '@allmaps/render': 1.0.0-beta.67
+      '@allmaps/stdlib': 1.0.0-beta.30
       lodash-es: 4.17.21
-      ol: 8.1.0
+      ol: 8.2.0
     dev: false
 
-  /@allmaps/render@1.0.0-beta.42:
-    resolution: {integrity: sha512-CA3rJ/bBiJj697irD/4kejnm6INq5ZjhcvM9gd+Yd3Gvb0SaEls5dyO3tk4NyrqwJyIJJL7zHBVUuE8hVJiPQg==}
+  /@allmaps/render@1.0.0-beta.67:
+    resolution: {integrity: sha512-rUj/gpkAKX3xrCSXRNGifYmpP5sihTD2pTSikTHdvszjYkGTfXd85OTpJ5tP6Qx+uIKs5A/Jg5UP7vkAd9j7SA==}
     dependencies:
-      '@allmaps/annotation': 1.0.0-beta.19
-      '@allmaps/id': 1.0.0-beta.20
-      '@allmaps/iiif-parser': 1.0.0-beta.28
-      '@allmaps/stdlib': 1.0.0-beta.17
-      '@allmaps/transform': 1.0.0-beta.20
-      '@allmaps/triangulate': 1.0.0-beta.9
+      '@allmaps/annotation': 1.0.0-beta.29
+      '@allmaps/id': 1.0.0-beta.29
+      '@allmaps/iiif-parser': 1.0.0-beta.39
+      '@allmaps/stdlib': 1.0.0-beta.30
+      '@allmaps/transform': 1.0.0-beta.40
+      '@allmaps/triangulate': 1.0.0-beta.22
+      '@allmaps/types': 1.0.0-beta.14
+      '@turf/boolean-point-in-polygon': 6.5.0
       lodash-es: 4.17.21
       potpack: 2.0.0
       rbush: 3.0.1
+      robust-point-in-polygon: 1.0.3
     dev: false
 
-  /@allmaps/stdlib@1.0.0-beta.17:
-    resolution: {integrity: sha512-UfOQmuIb8hN6k3GOa2hcajlryZXv0vX3A26FqhasS7juT0dxclRVX4DVOrz61fJfnJ2V1BfbiXb8M0dUIa1SpA==}
+  /@allmaps/stdlib@1.0.0-beta.30:
+    resolution: {integrity: sha512-14iabVCISajdlMAV8iihGOEvIEZaI7yp8wxpFWzejeAQKcAGaFRWhVMeZBp8/ujYWNdggv5YzioCPhnQwDpciQ==}
     dependencies:
-      '@allmaps/annotation': 1.0.0-beta.19
-      '@allmaps/iiif-parser': 1.0.0-beta.28
-      '@allmaps/types': 1.0.0-beta.6
+      '@allmaps/annotation': 1.0.0-beta.29
+      '@allmaps/iiif-parser': 1.0.0-beta.39
+      '@allmaps/types': 1.0.0-beta.14
       '@placemarkio/geojson-rewind': 1.0.2
       svg-parser: 2.0.4
     dev: false
 
-  /@allmaps/transform@1.0.0-beta.20:
-    resolution: {integrity: sha512-7XUtJs5ogiHJhUTMUaZfD2kJNzyaHR/o2pzIlrLhtEghfx6XC/W+d1eBtwCT1fdFVy6vSj2wHTH1L8Ov1hxT1w==}
+  /@allmaps/transform@1.0.0-beta.40:
+    resolution: {integrity: sha512-FZcKvHQ3h//aWhOSBcQvCuuXTRwn9GIab0sT3wbq74dl2t6OoLXreKSjJfqox/GmOQXSfxj3dRYXjcSNZczZpg==}
     dependencies:
-      '@allmaps/stdlib': 1.0.0-beta.17
-      '@allmaps/types': 1.0.0-beta.6
+      '@allmaps/stdlib': 1.0.0-beta.30
       '@turf/distance': 6.5.0
       '@turf/midpoint': 6.5.0
-      ml-matrix: 6.10.5
+      ml-matrix: 6.11.1
     dev: false
 
-  /@allmaps/triangulate@1.0.0-beta.9:
-    resolution: {integrity: sha512-4wWzFVWpYDXwTbtgwxXKpfKHYXUj/CN6km4T+d6yjhdCEf2/8/qC2Bm/pIkOf9Cwax9XzJoMq5Ylk3Th8RjRzg==}
+  /@allmaps/triangulate@1.0.0-beta.22:
+    resolution: {integrity: sha512-dyqKTSNEXB7DGIH2XTNRHHgQjH2epgVmmrlRdcu0Qx3TIEo7TwneCC27NWuT/NPVVn2m5tO4wTAz+UlMSoPL5w==}
     dependencies:
-      '@allmaps/stdlib': 1.0.0-beta.17
-      '@allmaps/types': 1.0.0-beta.6
+      '@allmaps/stdlib': 1.0.0-beta.30
+      '@allmaps/types': 1.0.0-beta.14
       poly2tri: 1.5.0
       robust-point-in-polygon: 1.0.3
     dev: false
 
-  /@allmaps/types@1.0.0-beta.6:
-    resolution: {integrity: sha512-1fm78/s0QOZFX2fUa8ee5o+kXBK9xE9yA8R+8B5NNNfoXi9m+8bXmtfQTRY93Ti52SzIQ1enhaySCi5ku9r8qA==}
+  /@allmaps/types@1.0.0-beta.14:
+    resolution: {integrity: sha512-5HQfCesCv3PnYGzM+a05IWY3+3S5xqkil3BXK1bHtidfxgNgT0kL1y06waoqQagXTbYISy2o0ap0EF0pTNVRjQ==}
     dev: false
 
   /@esbuild/android-arm64@0.18.20:
@@ -581,6 +586,13 @@ packages:
       '@turf/invariant': 6.5.0
     dev: false
 
+  /@turf/boolean-point-in-polygon@6.5.0:
+    resolution: {integrity: sha512-DtSuVFB26SI+hj0SjrvXowGTUCHlgevPAIsukssW6BG5MlNSBQAo70wpICBNJL6RjukXg8d2eXaAWuD/CqL00A==}
+    dependencies:
+      '@turf/helpers': 6.5.0
+      '@turf/invariant': 6.5.0
+    dev: false
+
   /@turf/destination@6.5.0:
     resolution: {integrity: sha512-4cnWQlNC8d1tItOz9B4pmJdWpXqS0vEvv65bI/Pj/genJnsL7evI0/Xw42RvEGROS481MPiU80xzvwxEvhQiMQ==}
     dependencies:
@@ -941,6 +953,28 @@ packages:
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
+
+  /color-name@2.0.0:
+    resolution: {integrity: sha512-SbtvAMWvASO5TE2QP07jHBMXKafgdZz8Vrsrn96fiL+O92/FN/PLARzUW5sKt013fjAprK2d2iCn2hk2Xb5oow==}
+    engines: {node: '>=12.20'}
+    dev: false
+
+  /color-parse@2.0.2:
+    resolution: {integrity: sha512-eCtOz5w5ttWIUcaKLiktF+DxZO1R9KLNY/xhbV6CkhM7sR3GhVghmt6X6yOnzeaM24po+Z9/S1apbXMwA3Iepw==}
+    dependencies:
+      color-name: 2.0.0
+    dev: false
+
+  /color-rgba@3.0.0:
+    resolution: {integrity: sha512-PPwZYkEY3M2THEHHV6Y95sGUie77S7X8v+h1r6LSAPF3/LL2xJ8duUXSrkic31Nzc4odPwHgUbiX/XuTYzQHQg==}
+    dependencies:
+      color-parse: 2.0.2
+      color-space: 2.0.1
+    dev: false
+
+  /color-space@2.0.1:
+    resolution: {integrity: sha512-nKqUYlo0vZATVOFHY810BSYjmCARrG7e5R3UE3CQlyjJTvv5kSSmPG1kzm/oDyyqjehM+lW1RnEt9It9GNa5JA==}
+    dev: false
 
   /comma-separated-tokens@2.0.3:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
@@ -2003,8 +2037,8 @@ packages:
       ml-array-min: 1.2.3
     dev: false
 
-  /ml-matrix@6.10.5:
-    resolution: {integrity: sha512-3RNGo8Ls3JR/f+8t0pNrvoDW6SmLNDBpQN6FzkFvNx7FJ3GL7Ic1kdxlDYavU3pRwxJFgBrRwZ0FwE+JjX+tvQ==}
+  /ml-matrix@6.11.1:
+    resolution: {integrity: sha512-Fvp1xF1O07tt6Ux9NcnEQTei5UlqbRpvvaFZGs7l3Ij+nOaEDcmbSVtxwNa8V4IfdyFI1NLNUteroMJ1S6vcEg==}
     dependencies:
       is-any-array: 2.0.1
       ml-array-rescale: 1.3.7
@@ -2056,6 +2090,17 @@ packages:
   /ol@8.1.0:
     resolution: {integrity: sha512-cx3SH2plpFS9fM8pp1nCypgQXGJD7Mcb1E3mEySmy5XEw1DUEo+kkNzgtAZz5qupekqi7aU9iBJEjCoMfqvO2Q==}
     dependencies:
+      earcut: 2.2.4
+      geotiff: 2.0.7
+      pbf: 3.2.1
+      rbush: 3.0.1
+    dev: false
+
+  /ol@8.2.0:
+    resolution: {integrity: sha512-/m1ddd7Jsp4Kbg+l7+ozR5aKHAZNQOBAoNZ5pM9Jvh4Etkf0WGkXr9qXd7PnhmwiC1Hnc2Toz9XjCzBBvexfXw==}
+    dependencies:
+      color-rgba: 3.0.0
+      color-space: 2.0.1
       earcut: 2.2.4
       geotiff: 2.0.7
       pbf: 3.2.1

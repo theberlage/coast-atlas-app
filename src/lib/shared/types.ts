@@ -20,7 +20,7 @@ export type MarkdownSlide = {
 		allmaps?: [
 			{
 				label?: string
-				annotation: string
+				filename: string
 				opacity?: number
 				saturation?: number
 				colorize?: string

@@ -272,9 +272,9 @@
 				let hardness = properties.removeBackground.hardness
 					? properties.removeBackground.hardness / 100
 					: 0.7
-				warpedMapLayer.setMapRemoveBackground(id, { hexColor, threshold, hardness })
+				warpedMapLayer.setMapRemoveColor(id, { hexColor, threshold, hardness })
 			} else {
-				warpedMapLayer.resetMapRemoveBackground(id)
+				warpedMapLayer.resetMapRemoveColor(id)
 			}
 			if (properties.saturation !== undefined) {
 				warpedMapLayer.setMapSaturation(id, properties.saturation / 100)
@@ -326,11 +326,11 @@
 		currentVectorSource = newVectorSource
 		// Uncomment the block below to display the bbox of the view
 
-		// let bboxPolygon = fromExtent(extent)
-		// let bboxFeature = new Feature({
-		// 	geometry: bboxPolygon
-		// })
-		// vectorSource.addFeature(bboxFeature)
+		let bboxPolygon = fromExtent(extent)
+		let bboxFeature = new Feature({
+			geometry: bboxPolygon
+		})
+		vectorSource.addFeature(bboxFeature)
 
 		// Set properties
 		let selectable = false
@@ -459,12 +459,7 @@
 
 		map = new olMap({
 			view,
-			layers: [
-				xyzLayer,
-				// osmLayer,
-				warpedMapLayer,
-				vectorLayer
-			],
+			layers: [xyzLayer, warpedMapLayer, vectorLayer],
 			target: 'ol',
 			overlays: [overlay],
 			controls: addControls()

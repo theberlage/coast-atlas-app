@@ -14,7 +14,7 @@
 <div class="header">
 	<div>
 		<button class:black={$black} class="home-button" on:click={goHome}>
-			<body><span class="hidden">The Berlage: </span>City Atlas</body>
+			<body><span class="hidden">The Berlage: </span>Coast Atlas</body>
 		</button>
 	</div>
 	<div class="menu">

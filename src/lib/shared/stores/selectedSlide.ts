@@ -74,12 +74,12 @@ export const georefAnnotations = derived(selectedSlideData, ($selectedSlideData,
 	if ($selectedSlideData && $selectedSlideData.frontmatter?.allmaps?.length) {
 		const resp = $selectedSlideData.frontmatter?.allmaps
 			// Remove items without annotation filename
-			.filter((item) => item.annotation)
+			.filter((item) => item.filename)
 			// Reverse array to make sure layers are added in the right order
 			.reverse()
 			// Create an array of promises to fetch the jsons while keeping the metadata
 			.map((item) => {
-				const path = $selectedSlideData.path + 'annotations/' + item.annotation
+				const path = $selectedSlideData.path + 'allmaps/' + item.filename
 				return fetchJson(path).then((resp) => ({ ...item, resp }))
 			})
 		// Map of individual annotations (that can be used to check for existing maps)
@@ -116,7 +116,7 @@ export const vectorLayers = derived(selectedSlideData, ($selectedSlideData, set)
 			const resp = $selectedSlideData.frontmatter?.geojson
 				.filter((item) => item.filename)
 				.map((item) => {
-					const path = $selectedSlideData.path + 'geojsons/' + item.filename
+					const path = $selectedSlideData.path + 'felt/' + item.filename
 					return fetchJson(path).then((resp) => ({ ...item, resp, path }))
 				})
 			Promise.all(resp).then((data) => {

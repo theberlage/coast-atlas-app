@@ -32,7 +32,7 @@
 <svelte:window bind:innerHeight bind:innerWidth on:hashchange={() => hash.set(location.hash)} />
 
 <svelte:head>
-	<title>City Atlas</title>
+	<title>Coast Atlas</title>
 </svelte:head>
 
 <div class="grid-container" style="height:{innerHeight}px;">

@@ -115,7 +115,7 @@
 					<ul>
 						{#if annotations}
 							{#each annotations as annotation}
-								{#if annotation.annotation && annotation.label}
+								{#if annotation.filename && annotation.label}
 									<li>
 										{annotation.label}
 										{#if annotation.attribution?.name && annotation.attribution?.url}
@@ -130,8 +130,8 @@
 											href={allmapsViewer +
 												$page.url.origin +
 												path +
-												'annotations/' +
-												annotation.annotation}>{@html allmapsLogo}</a
+												'allmaps/' +
+												annotation.filename}>{@html allmapsLogo}</a
 										>
 									</li>
 								{/if}
