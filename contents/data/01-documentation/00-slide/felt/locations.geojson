@@ -1,0 +1,59 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": { "label": "Dune", "href": "#/documentation/dune/1" },
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[4.331768, 52.154856],
+						[4.27778, 52.116716],
+						[4.301548, 52.10337],
+						[4.366403, 52.119844],
+						[4.381003, 52.146314],
+						[4.331768, 52.154856]
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": { "href": "#/documentation/defense/1", "label": "Defense" },
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[4.088191, 51.984513],
+						[4.134003, 51.972232],
+						[4.146305, 51.980594],
+						[4.168786, 51.98608],
+						[4.177694, 52.006452],
+						[4.138245, 52.015068],
+						[4.124671, 52.003579],
+						[4.088191, 51.984513]
+					]
+				]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": { "href": "#/documentation/recreation/1", "label": "Recreation" },
+			"geometry": {
+				"type": "Polygon",
+				"coordinates": [
+					[
+						[4.175891, 52.046544],
+						[4.196115, 52.03635],
+						[4.207069, 52.045507],
+						[4.229259, 52.062088],
+						[4.215496, 52.068823],
+						[4.19134, 52.059153],
+						[4.175891, 52.046544]
+					]
+				]
+			}
+		}
+	]
+}
