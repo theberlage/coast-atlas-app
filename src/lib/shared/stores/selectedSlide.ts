@@ -123,26 +123,42 @@ export const vectorLayers = derived(selectedSlideData, ($selectedSlideData, set)
 				const map = new Map()
 				for (const item of data) {
 					if (item.resp.type === 'Feature') {
-						const properties = item.resp.properties
 						// Delete id property in case of duplicate ids
 						delete item.resp.id
-						item.resp.properties = {
-							...properties,
-							label: properties?.label || item.label,
-							collection: item.path
+						const properties = item.resp.properties
+						properties.label = properties?.label || item.label
+						properties.collection = item.path
+						// Parse Felt colors
+						if ('felt:color' in properties) {
+							properties.color = properties['felt:color']
+							properties.stroke = properties['felt:stroke']
+						}
+						if ('felt:fillOpacity' in properties) {
+							properties['fill-opacity'] = properties['felt:fillOpacity']
+						}
+						if ('felt:strokeWidth' in properties) {
+							properties['stroke-width'] = properties['felt:strokeWidth']
 						}
 					} else {
 						for (const feature of item.resp.features) {
+							const properties = feature.properties
 							// Delete id property in case of duplicate ids
 							delete feature.id
 							// Add geojson path to each feature to check for existing features
-							feature.properties = { ...feature.properties, collection: item.path }
+							feature.properties.collection = item.path
 							// Replace for the lines below to add labels from the frontmatter
-							// feature.properties = {
-							// 	...feature.properties,
-							// 	collection: item.path,
-							// 	label: feature.properties?.label || item.label
-							// }
+							// properties.label = feature.properties?.label || item.label
+							// Parse Felt colors
+							if ('felt:color' in properties) {
+								properties.color = properties['felt:color']
+								properties.stroke = properties['felt:color']
+							}
+							if ('felt:fillOpacity' in properties) {
+								properties['fill-opacity'] = properties['felt:fillOpacity']
+							}
+							if ('felt:strokeWidth' in properties) {
+								properties['stroke-width'] = properties['felt:strokeWidth']
+							}
 						}
 					}
 					map.set(item.path, item.resp)
