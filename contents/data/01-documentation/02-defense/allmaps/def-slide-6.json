@@ -1,0 +1,147 @@
+{
+    "type": "AnnotationPage",
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "items": [
+      {
+        "id": "https://annotations.allmaps.org/maps/7cb2327d7fe20d30",
+        "type": "Annotation",
+        "@context": [
+          "http://iiif.io/api/extension/georef/1/context.json",
+          "http://iiif.io/api/presentation/3/context.json"
+        ],
+        "created": "2024-10-04T07:32:50.725Z",
+        "modified": "2024-10-04T07:32:50.725Z",
+        "motivation": "georeferencing",
+        "target": {
+          "type": "SpecificResource",
+          "source": {
+            "id": "https://service.archief.nl/iipsrv?IIIF=/87/c1/c6/d1/5e/24/4c/0e/9e/ee/bc/6a/81/6b/08/5c/789b02f0-ddbc-4a98-ac5f-17fb49ec98c6.jp2",
+            "type": "ImageService2",
+            "height": 3907,
+            "width": 5718,
+            "partOf": [
+              {
+                "id": "https://data.globalise.huygens.knaw.nl/manifests/maps/2.13.167/2/2.6/433-874.json/canvas/p4266",
+                "type": "Canvas",
+                "label": {
+                  "en": [
+                    "NL-HaNA_2.13.167_717_08"
+                  ]
+                },
+                "partOf": [
+                  {
+                    "id": "https://data.globalise.huygens.knaw.nl/manifests/maps/2.13.167/2/2.6/433-874.json",
+                    "type": "Manifest",
+                    "label": {
+                      "en": [
+                        "433-874 - Registratietekeningen van afzonderlijke werken, calques."
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "selector": {
+            "type": "SvgSelector",
+            "value": "<svg width=\"5718\" height=\"3907\"><polygon points=\"690,3334 1711,3322 1691,2165 674,2176\" /></svg>"
+          }
+        },
+        "body": {
+          "type": "FeatureCollection",
+          "transformation": {
+            "type": "polynomial",
+            "options": {
+              "order": 1
+            }
+          },
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  1713,
+                  3314
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1159746,
+                  51.9835105
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  676,
+                  2184
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1160013,
+                  51.9836373
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  1696,
+                  2166
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1160924,
+                  51.9835726
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  699,
+                  3336
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1158842,
+                  51.9835791
+                ]
+              }
+            }
+          ],
+          "_allmaps": {
+            "id": "https://annotations.allmaps.org/maps/7cb2327d7fe20d30",
+            "version": "https://annotations.allmaps.org/maps/7cb2327d7fe20d30@1669fed79a036ebe",
+            "image": {
+              "id": "https://annotations.allmaps.org/images/0f3dd8e1404e13b8",
+              "version": "https://annotations.allmaps.org/images/0f3dd8e1404e13b8@5c029e6195fda82c",
+              "canvases": [
+                {
+                  "id": "https://annotations.allmaps.org/canvases/42cd9aff103872d1",
+                  "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/4329da2577a451c7"
+                    }
+                  ]
+                }
+              ]
+            },
+            "scale": 107.330357,
+            "area": 102.41
+          }
+        }
+      }
+    ]
+  }
