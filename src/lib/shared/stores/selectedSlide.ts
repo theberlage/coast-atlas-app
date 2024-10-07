@@ -86,8 +86,9 @@ export const georefAnnotations = derived(selectedSlideData, ($selectedSlideData,
 		Promise.all(resp).then((data) => {
 			const map = new Map()
 			for (const item of data) {
-				for (const annotation of item.resp.items) {
-					annotation.properties = {
+				if (item.resp.type === 'Annotation') {
+					// Single annotation
+					item.resp.properties = {
 						opacity: item.opacity,
 						saturation: item.saturation,
 						colorize: item.colorize,
@@ -97,7 +98,22 @@ export const georefAnnotations = derived(selectedSlideData, ($selectedSlideData,
 							hardness: item.removeBackground?.hardness
 						}
 					}
-					map.set(annotation.id, annotation)
+					map.set(item.resp.id, item.resp)
+				} else {
+					// AnnotationPage
+					for (const annotation of item.resp.items) {
+						annotation.properties = {
+							opacity: item.opacity,
+							saturation: item.saturation,
+							colorize: item.colorize,
+							removeBackground: {
+								color: item.removeBackground?.color,
+								threshold: item.removeBackground?.threshold,
+								hardness: item.removeBackground?.hardness
+							}
+						}
+						map.set(annotation.id, annotation)
+					}
 				}
 			}
 			set(map)
@@ -126,15 +142,24 @@ export const vectorLayers = derived(selectedSlideData, ($selectedSlideData, set)
 						// Delete id property in case of duplicate ids
 						delete item.resp.id
 						const properties = item.resp.properties
-						properties.label = properties?.label || item.label
+						properties.label = properties?.label || properties?.name || item.label
 						properties.collection = item.path
 						// Parse Felt colors
 						if ('felt:color' in properties) {
 							properties.color = properties['felt:color']
 							properties.stroke = properties['felt:stroke']
 						}
+						const strokeStyle = properties['felt:strokeStyle']
+						if (strokeStyle === 'dashed') {
+							properties.strokeStyle = [4, 8]
+						} else if (strokeStyle === 'dotted') {
+							properties.strokeStyle = [0, 4]
+						}
 						if ('felt:fillOpacity' in properties) {
 							properties['fill-opacity'] = properties['felt:fillOpacity']
+						}
+						if ('felt:strokeOpacity' in properties) {
+							properties['stroke-opacity'] = properties['felt:fillOpacity']
 						}
 						if ('felt:strokeWidth' in properties) {
 							properties['stroke-width'] = properties['felt:strokeWidth']
@@ -147,11 +172,17 @@ export const vectorLayers = derived(selectedSlideData, ($selectedSlideData, set)
 							// Add geojson path to each feature to check for existing features
 							feature.properties.collection = item.path
 							// Replace for the lines below to add labels from the frontmatter
-							// properties.label = feature.properties?.label || item.label
+							properties.label = properties?.label || properties?.name || item.label
 							// Parse Felt colors
 							if ('felt:color' in properties) {
 								properties.fill = properties['felt:color']
 								properties.stroke = properties['felt:color']
+							}
+							const strokeStyle = properties['felt:strokeStyle']
+							if (strokeStyle === 'dashed') {
+								properties.strokeStyle = [4, 8]
+							} else if (strokeStyle === 'dotted') {
+								properties.strokeStyle = [0, 4]
 							}
 							if ('felt:fillOpacity' in properties) {
 								properties['fill-opacity'] = properties['felt:fillOpacity']
