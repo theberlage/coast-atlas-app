@@ -150,7 +150,7 @@ export const vectorLayers = derived(selectedSlideData, ($selectedSlideData, set)
 							// properties.label = feature.properties?.label || item.label
 							// Parse Felt colors
 							if ('felt:color' in properties) {
-								properties.color = properties['felt:color']
+								properties.fill = properties['felt:color']
 								properties.stroke = properties['felt:color']
 							}
 							if ('felt:fillOpacity' in properties) {
