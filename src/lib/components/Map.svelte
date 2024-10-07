@@ -324,21 +324,22 @@
 		}
 		console.log(`Features: ${removedCount} removed, ${addedCount} added, ${existingCount} existing`)
 		currentVectorSource = newVectorSource
-		// Uncomment the block below to display the bbox of the view
 
-		let bboxPolygon = fromExtent(extent)
-		let bboxFeature = new Feature({
-			geometry: bboxPolygon
-		})
-		vectorSource.addFeature(bboxFeature)
+		// Uncomment the block below to display the bbox of the view
+		// let bboxPolygon = fromExtent(extent)
+		// let bboxFeature = new Feature({
+		// 	geometry: bboxPolygon,
+		// 	'fill-opacity': 0
+		// })
+		// vectorSource.addFeature(bboxFeature)
 
 		// Set properties
 		let selectable = false
 		vectorSource.forEachFeature(function (feature) {
 			let properties = feature.getProperties()
-			if (properties.href || properties.label) {
+			if (properties.label) {
 				selectable = true
-				feature.setStyle(selectableStyles)
+				// feature.setStyle(selectableStyles)
 
 				// // Add Berlage icon for selectable items
 				// const berlageIcon = new Style({
@@ -357,10 +358,9 @@
 				// })
 				// extraFeature.setStyle(berlageIcon)
 				// vectorSource.addFeature(extraFeature)
-			} else {
-				const customStyle = parseCustomFeatureStyle(properties)
-				feature.setStyle(customStyle)
 			}
+			const customStyle = parseCustomFeatureStyle(properties)
+			feature.setStyle(customStyle)
 		})
 		if (selectable) createListeners()
 	}
@@ -369,21 +369,21 @@
 		pointerMoveKey = map.on('pointermove', function (event) {
 			// https://stackoverflow.com/questions/60511753/why-isnt-openlayers-detecting-touch-events-from-my-laptop
 			vectorLayer.getFeatures(event.pixel).then(function (features) {
-				let feature = features.length ? features[0] : undefined
-				let properties = (feature && feature.getProperties()) || undefined
-				if (feature == undefined || !properties.label) {
-					vectorSource.forEachFeature(function (feature) {
-						let properties = feature.getProperties()
-						if (properties.href || properties.label) {
-							feature.setStyle(selectableStyles)
-							// } else if (properties.label) {
-							// 	const customStyle = parseCustomFeatureStyle(properties)
-							// 	feature.setStyle(customStyle)
-						}
-					})
-					map.getTargetElement().style.cursor = ''
-				}
-				if (feature && properties.label) {
+				let feature = features.length && features[0]
+				let properties = feature && feature.getProperties()
+
+				// Reset styles
+				vectorSource.forEachFeature(function (feature) {
+					let properties = feature.getProperties()
+					if (properties.label) {
+						const customStyle = parseCustomFeatureStyle(properties)
+						feature.setStyle(customStyle)
+					}
+				})
+				map.getTargetElement().style.cursor = ''
+
+				// Set styles
+				if (properties?.label) {
 					feature.setStyle(selectedStyles)
 					map.getTargetElement().style.cursor = 'pointer'
 				}
@@ -392,7 +392,7 @@
 
 		singleClickKey = map.on('singleclick', function (event) {
 			vectorLayer.getFeatures(event.pixel).then(function (features) {
-				const feature = features.length ? features[0] : undefined
+				const feature = features.length && features[0]
 				if (feature) {
 					const properties = feature.getProperties()
 					if (properties.label) {
@@ -479,7 +479,7 @@
 			</div>
 			<div id="overlay-content">
 				{#if overlayContents}
-					{#if overlayContents.href}
+					{#if overlayContents.link}
 						<p>{overlayContents.label}</p>
 						<p>
 							{#if about}
@@ -487,25 +487,25 @@
 									<a
 										class="overlay-link"
 										on:click={closeOverlay}
-										href={overlayContents.href.replace('argumentation', 'documentation')}
+										href={overlayContents.link.replace('argumentation', 'documentation')}
 									>
 										Open in Documentation
 									</a>
 								</p>
 								<p>
-									<a class="overlay-link" on:click={closeOverlay} href={overlayContents.href}>
+									<a class="overlay-link" on:click={closeOverlay} href={overlayContents.link}>
 										Open in Argumentation
 									</a>
 								</p>
 							{:else}
-								<a class="overlay-link" on:click={closeOverlay} href={overlayContents.href}>
+								<a class="overlay-link" on:click={closeOverlay} href={overlayContents.link}>
 									{#if overlayContents['link-title']}
 										{overlayContents['link-title']}
 									{:else if $overview}
 										Start slideshow
-									{:else if overlayContents.href.includes('argumentation')}
+									{:else if overlayContents.link.includes('argumentation')}
 										Go to slide
-									{:else if overlayContents.href.includes('documentation')}
+									{:else if overlayContents.link.includes('documentation')}
 										Open in Documentation
 									{/if}
 								</a>
@@ -513,6 +513,7 @@
 						</p>
 					{:else}
 						<p>{overlayContents.label}</p>
+						<p>{overlayContents.description ? overlayContents.description : ''}</p>
 					{/if}
 				{/if}
 			</div>

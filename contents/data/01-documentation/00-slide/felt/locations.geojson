@@ -3,7 +3,7 @@
 	"features": [
 		{
 			"type": "Feature",
-			"properties": { "label": "Dune", "href": "#/documentation/dune/1" },
+			"properties": { "fill-opacity": 0.5, "link": "#/documentation/dune", "label": "Dune" },
 			"geometry": {
 				"type": "Polygon",
 				"coordinates": [
@@ -20,7 +20,7 @@
 		},
 		{
 			"type": "Feature",
-			"properties": { "href": "#/documentation/defense/1", "label": "Defense" },
+			"properties": { "fill-opacity": 0.5, "link": "#/documentation/defense", "label": "Defense" },
 			"geometry": {
 				"type": "Polygon",
 				"coordinates": [
@@ -39,7 +39,11 @@
 		},
 		{
 			"type": "Feature",
-			"properties": { "href": "#/documentation/recreation/1", "label": "Recreation" },
+			"properties": {
+				"fill-opacity": 0.5,
+				"link": "#/documentation/recreation",
+				"label": "Recreation"
+			},
 			"geometry": {
 				"type": "Polygon",
 				"coordinates": [
