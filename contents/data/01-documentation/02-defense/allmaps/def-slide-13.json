@@ -1,0 +1,179 @@
+{
+    "type": "AnnotationPage",
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "items": [
+      {
+        "id": "https://annotations.allmaps.org/maps/5001d7b8fd7578de",
+        "type": "Annotation",
+        "@context": [
+          "http://iiif.io/api/extension/georef/1/context.json",
+          "http://iiif.io/api/presentation/3/context.json"
+        ],
+        "created": "2024-10-04T09:26:19.402Z",
+        "modified": "2024-10-04T09:26:19.402Z",
+        "motivation": "georeferencing",
+        "target": {
+          "type": "SpecificResource",
+          "source": {
+            "id": "https://service.archief.nl/iipsrv?IIIF=/75/19/24/85/50/5d/47/41/98/16/85/e9/e7/df/07/73/872479af-39a8-409d-9f86-d796ff1f1c53.jp2",
+            "type": "ImageService2",
+            "height": 4273,
+            "width": 7156,
+            "partOf": [
+              {
+                "id": "https://data.globalise.huygens.knaw.nl/manifests/maps/2.13.167/2/2.6/433-874.json/canvas/p4326",
+                "type": "Canvas",
+                "label": {
+                  "en": [
+                    "NL-HaNA_2.13.167_721_07"
+                  ]
+                },
+                "partOf": [
+                  {
+                    "id": "https://data.globalise.huygens.knaw.nl/manifests/maps/2.13.167/2/2.6/433-874.json",
+                    "type": "Manifest",
+                    "label": {
+                      "en": [
+                        "433-874 - Registratietekeningen van afzonderlijke werken, calques."
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "selector": {
+            "type": "SvgSelector",
+            "value": "<svg width=\"7156\" height=\"4273\"><polygon points=\"1016,2424 1460,2170 1918,2430 1922,2974 1460,3240 1024,2989\" /></svg>"
+          }
+        },
+        "body": {
+          "type": "FeatureCollection",
+          "transformation": {
+            "type": "polynomial",
+            "options": {
+              "order": 1
+            }
+          },
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  1044,
+                  2993
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1209753,
+                  51.9774682
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  1930,
+                  2411
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1210488,
+                  51.9774697
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  1481,
+                  2159
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1210288,
+                  51.9774932
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  1014,
+                  2416
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1209867,
+                  51.9774897
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  1922,
+                  2965
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1210342,
+                  51.9774517
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  1491,
+                  3218
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1209949,
+                  51.9774479
+                ]
+              }
+            }
+          ],
+          "_allmaps": {
+            "id": "https://annotations.allmaps.org/maps/5001d7b8fd7578de",
+            "version": "https://annotations.allmaps.org/maps/5001d7b8fd7578de@e775772fffba5bff",
+            "image": {
+              "id": "https://annotations.allmaps.org/images/ecc1edc1a04a1f33",
+              "version": "https://annotations.allmaps.org/images/ecc1edc1a04a1f33@497a4ff20d81e3f8",
+              "canvases": [
+                {
+                  "id": "https://annotations.allmaps.org/canvases/e059448e28977ca8",
+                  "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/4329da2577a451c7"
+                    }
+                  ]
+                }
+              ]
+            },
+            "scale": 199.729888,
+            "area": 18.32
+          }
+        }
+      }
+    ]
+  }

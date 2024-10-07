@@ -9,6 +9,8 @@
         "http://iiif.io/api/extension/georef/1/context.json",
         "http://iiif.io/api/presentation/3/context.json"
       ],
+      "created": "2024-09-27T11:53:35.702Z",
+      "modified": "2024-09-27T11:53:35.702Z",
       "motivation": "georeferencing",
       "target": {
         "type": "SpecificResource",
@@ -25,6 +27,12 @@
       },
       "body": {
         "type": "FeatureCollection",
+        "transformation": {
+          "type": "polynomial",
+          "options": {
+            "order": 1
+          }
+        },
         "features": [
           {
             "type": "Feature",
@@ -311,22 +319,6 @@
               "coordinates": [
                 3.9940893,
                 51.4025371
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "resourceCoords": [
-                7831,
-                1178
-              ]
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                5.2149764,
-                53.3597112
               ]
             }
           },
@@ -1145,8 +1137,35 @@
                 51.4076731
               ]
             }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                7831,
+                1178
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.2149764,
+                53.3597112
+              ]
+            }
           }
-        ]
+        ],
+        "_allmaps": {
+          "id": "https://annotations.allmaps.org/maps/1a1f2bab9ccaef0a",
+          "version": "https://annotations.allmaps.org/maps/1a1f2bab9ccaef0a@6677b5aa25092e36",
+          "image": {
+            "id": "https://annotations.allmaps.org/images/962e4da9bd8c9e54",
+            "version": "https://annotations.allmaps.org/images/962e4da9bd8c9e54@6ba32d42a5b39139",
+            "canvases": []
+          },
+          "scale": 0.059433,
+          "area": 15076860478.25
+        }
       }
     }
   ]
