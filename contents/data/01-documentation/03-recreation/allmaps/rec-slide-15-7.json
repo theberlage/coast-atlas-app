@@ -3,34 +3,34 @@
     "@context": "http://www.w3.org/ns/anno.jsonld",
     "items": [
       {
-        "id": "https://annotations.allmaps.org/maps/d9e347f742decec1",
+        "id": "https://annotations.allmaps.org/maps/d562027956e0018e",
         "type": "Annotation",
         "@context": [
           "http://iiif.io/api/extension/georef/1/context.json",
           "http://iiif.io/api/presentation/3/context.json"
         ],
-        "created": "2024-09-20T13:22:51.585Z",
-        "modified": "2024-09-20T13:22:51.585Z",
+        "created": "2024-09-20T09:05:50.055Z",
+        "modified": "2024-09-20T09:05:50.055Z",
         "motivation": "georeferencing",
         "target": {
           "type": "SpecificResource",
           "source": {
-            "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0",
+            "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272",
             "type": "ImageService2",
-            "height": 875,
-            "width": 642,
+            "height": 2533,
+            "width": 3558,
             "partOf": [
               {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/40",
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/28",
                 "type": "Canvas",
                 "label": {
                   "none": [
-                    "Canvas 40"
+                    "Canvas 28"
                   ]
                 },
                 "partOf": [
                   {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site/scans-stadsarchief-rotterdam",
                     "type": "Manifest",
                     "label": {
                       "none": [
@@ -39,25 +39,7 @@
                     }
                   },
                   {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/stadsarchief-rotterdam/",
-                    "type": "Manifest",
-                    "label": {
-                      "none": [
-                        "Generated from 'string1string2string3' named query"
-                      ]
-                    }
-                  },
-                  {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
-                    "type": "Manifest",
-                    "label": {
-                      "none": [
-                        "Generated from 'string1string2string3' named query"
-                      ]
-                    }
-                  },
-                  {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/stadsarchief-rotterdam",
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site/scans-stadsarchief-rotterdam/scans-theo",
                     "type": "Manifest",
                     "label": {
                       "none": [
@@ -68,60 +50,11 @@
                 ]
               },
               {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/2",
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/36",
                 "type": "Canvas",
                 "label": {
                   "none": [
-                    "Canvas 2"
-                  ]
-                },
-                "partOf": [
-                  {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/stadsarchief-rotterdam/port_b5c",
-                    "type": "Manifest",
-                    "label": {
-                      "none": [
-                        "Generated from 'string1string2string3' named query"
-                      ]
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/157",
-                "type": "Canvas",
-                "label": {
-                  "none": [
-                    "Canvas 157"
-                  ]
-                },
-                "partOf": [
-                  {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
-                    "type": "Manifest",
-                    "label": {
-                      "none": [
-                        "Generated from 'string1string2string3' named query"
-                      ]
-                    }
-                  },
-                  {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
-                    "type": "Manifest",
-                    "label": {
-                      "none": [
-                        "Generated from 'string1string2string3' named query"
-                      ]
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/183",
-                "type": "Canvas",
-                "label": {
-                  "none": [
-                    "Canvas 183"
+                    "Canvas 36"
                   ]
                 },
                 "partOf": [
@@ -135,7 +68,7 @@
                     }
                   },
                   {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site",
                     "type": "Manifest",
                     "label": {
                       "none": [
@@ -146,31 +79,11 @@
                 ]
               },
               {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/188",
-                "type": "Canvas",
-                "label": {
-                  "none": [
-                    "Canvas 188"
-                  ]
-                },
-                "partOf": [
-                  {
-                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
-                    "type": "Manifest",
-                    "label": {
-                      "none": [
-                        "Generated from 'string1string2string3' named query"
-                      ]
-                    }
-                  }
-                ]
-              },
-              {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/191",
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/39",
                 "type": "Canvas",
                 "label": {
                   "en": [
-                    "Canvas 191"
+                    "Canvas 39"
                   ]
                 },
                 "partOf": [
@@ -195,11 +108,11 @@
                 ]
               },
               {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/192",
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/40",
                 "type": "Canvas",
                 "label": {
                   "none": [
-                    "Canvas 192"
+                    "Canvas 40"
                   ]
                 },
                 "partOf": [
@@ -220,18 +133,96 @@
                         "Generated from 'string1string2string3' named query"
                       ]
                     }
+                  },
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
                   }
                 ]
               },
               {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/257",
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/42",
                 "type": "Canvas",
                 "label": {
                   "none": [
-                    "Canvas 257"
+                    "Canvas 42"
                   ]
                 },
                 "partOf": [
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/50",
+                "type": "Canvas",
+                "label": {
+                  "none": [
+                    "Canvas 50"
+                  ]
+                },
+                "partOf": [
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/51",
+                "type": "Canvas",
+                "label": {
+                  "none": [
+                    "Canvas 51"
+                  ]
+                },
+                "partOf": [
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/52",
+                "type": "Canvas",
+                "label": {
+                  "none": [
+                    "Canvas 52"
+                  ]
+                },
+                "partOf": [
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  },
                   {
                     "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
                     "type": "Manifest",
@@ -244,11 +235,11 @@
                 ]
               },
               {
-                "id": "https://dlc.services/iiif-img/7/33/9b4b923b9d9bc91503426a0aa993dba0/canvas/c/270",
+                "id": "https://dlc.services/iiif-img/7/33/e6e787816c7dd3983eb683ff859c6272/canvas/c/55",
                 "type": "Canvas",
                 "label": {
                   "none": [
-                    "Canvas 270"
+                    "Canvas 55"
                   ]
                 },
                 "partOf": [
@@ -276,7 +267,7 @@
           },
           "selector": {
             "type": "SvgSelector",
-            "value": "<svg width=\"642\" height=\"875\"><polygon points=\"280,404 293,326 496,75 547,217 594,285 455,493 391,660\" /></svg>"
+            "value": "<svg width=\"3558\" height=\"2533\"><polygon points=\"589,879 1182,880 1192,1384 1262,1452 1198,1522 1190,2125 581,2127 580,1751 536,1672 575,1635\" /></svg>"
           }
         },
         "body": {
@@ -292,15 +283,15 @@
               "type": "Feature",
               "properties": {
                 "resourceCoords": [
-                  334,
-                  802
+                  1191,
+                  2127
                 ]
               },
               "geometry": {
                 "type": "Point",
                 "coordinates": [
-                  4.1271586,
-                  51.9881501
+                  4.1246917,
+                  51.9918779
                 ]
               }
             },
@@ -308,15 +299,15 @@
               "type": "Feature",
               "properties": {
                 "resourceCoords": [
-                  281,
-                  404
+                  1179,
+                  877
                 ]
               },
               "geometry": {
                 "type": "Point",
                 "coordinates": [
-                  4.1259919,
-                  51.9923268
+                  4.1245928,
+                  51.9919223
                 ]
               }
             },
@@ -324,83 +315,50 @@
               "type": "Feature",
               "properties": {
                 "resourceCoords": [
-                  494,
-                  91
+                  584,
+                  2127
                 ]
               },
               "geometry": {
                 "type": "Point",
                 "coordinates": [
-                  4.1297106,
-                  51.9958205
+                  4.1246603,
+                  51.9918511
                 ]
               }
             }
           ],
           "_allmaps": {
-            "id": "https://annotations.allmaps.org/maps/d9e347f742decec1",
-            "version": "https://annotations.allmaps.org/maps/d9e347f742decec1@56a5c146188697f0",
+            "id": "https://annotations.allmaps.org/maps/d562027956e0018e",
+            "version": "https://annotations.allmaps.org/maps/d562027956e0018e@7566d124856f6a1d",
             "image": {
-              "id": "https://annotations.allmaps.org/images/72141102dbac2f84",
-              "version": "https://annotations.allmaps.org/images/72141102dbac2f84@d7ecef3465c21000",
+              "id": "https://annotations.allmaps.org/images/5f6cfdcd13d0b8de",
+              "version": "https://annotations.allmaps.org/images/5f6cfdcd13d0b8de@f9e5075e0e1b5c64",
               "canvases": [
                 {
-                  "id": "https://annotations.allmaps.org/canvases/58cf54481de805b4",
+                  "id": "https://annotations.allmaps.org/canvases/66edeb09bb1b1863",
                   "manifests": [
                     {
-                      "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+                      "id": "https://annotations.allmaps.org/manifests/627270e057c38eb2"
                     },
                     {
-                      "id": "https://annotations.allmaps.org/manifests/cc36160a9a608512"
-                    },
-                    {
-                      "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
-                    },
-                    {
-                      "id": "https://annotations.allmaps.org/manifests/374db6b5874d0354"
+                      "id": "https://annotations.allmaps.org/manifests/f2f6e2489e0a23a6"
                     }
                   ]
                 },
                 {
-                  "id": "https://annotations.allmaps.org/canvases/32bc061b6b9da961",
-                  "manifests": [
-                    {
-                      "id": "https://annotations.allmaps.org/manifests/0823f15d9787c557"
-                    }
-                  ]
-                },
-                {
-                  "id": "https://annotations.allmaps.org/canvases/d7ae6d8fcdfdeeaf",
-                  "manifests": [
-                    {
-                      "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
-                    },
-                    {
-                      "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
-                    }
-                  ]
-                },
-                {
-                  "id": "https://annotations.allmaps.org/canvases/97f6b65333f4854a",
+                  "id": "https://annotations.allmaps.org/canvases/952775b15b3727c2",
                   "manifests": [
                     {
                       "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
                     },
                     {
-                      "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+                      "id": "https://annotations.allmaps.org/manifests/cc9286f5a5570b4f"
                     }
                   ]
                 },
                 {
-                  "id": "https://annotations.allmaps.org/canvases/2d5669223a9a86c4",
-                  "manifests": [
-                    {
-                      "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
-                    }
-                  ]
-                },
-                {
-                  "id": "https://annotations.allmaps.org/canvases/6a2329e35bf197d5",
+                  "id": "https://annotations.allmaps.org/canvases/62142d2c9c16bc9c",
                   "manifests": [
                     {
                       "id": "https://annotations.allmaps.org/manifests/f880c6f3a09d2e1f"
@@ -411,26 +369,56 @@
                   ]
                 },
                 {
-                  "id": "https://annotations.allmaps.org/canvases/e10582d2b4ed565d",
+                  "id": "https://annotations.allmaps.org/canvases/ee0d48eee1ba18d2",
                   "manifests": [
                     {
                       "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
                     },
                     {
                       "id": "https://annotations.allmaps.org/manifests/e6bcda46b09aa8f5"
+                    },
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/cc9286f5a5570b4f"
                     }
                   ]
                 },
                 {
-                  "id": "https://annotations.allmaps.org/canvases/f38ddcdf0417ef9b",
+                  "id": "https://annotations.allmaps.org/canvases/26fed24b54cca10d",
                   "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/cc9286f5a5570b4f"
+                    }
+                  ]
+                },
+                {
+                  "id": "https://annotations.allmaps.org/canvases/522d954f88192cb2",
+                  "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/cc9286f5a5570b4f"
+                    }
+                  ]
+                },
+                {
+                  "id": "https://annotations.allmaps.org/canvases/677501629816fa4a",
+                  "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/cc9286f5a5570b4f"
+                    }
+                  ]
+                },
+                {
+                  "id": "https://annotations.allmaps.org/canvases/aa4b472098dbf45b",
+                  "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/cc9286f5a5570b4f"
+                    },
                     {
                       "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
                     }
                   ]
                 },
                 {
-                  "id": "https://annotations.allmaps.org/canvases/e929460c47949a28",
+                  "id": "https://annotations.allmaps.org/canvases/b73651056fe07683",
                   "manifests": [
                     {
                       "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
@@ -442,8 +430,8 @@
                 }
               ]
             },
-            "scale": 0.822426,
-            "area": 126155.42
+            "scale": 156.666313,
+            "area": 31.27
           }
         }
       }

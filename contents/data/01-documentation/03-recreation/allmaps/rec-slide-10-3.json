@@ -1,0 +1,223 @@
+{
+    "type": "AnnotationPage",
+    "@context": "http://www.w3.org/ns/anno.jsonld",
+    "items": [
+      {
+        "id": "https://annotations.allmaps.org/maps/e6dce1fc29fc05f2",
+        "type": "Annotation",
+        "@context": [
+          "http://iiif.io/api/extension/georef/1/context.json",
+          "http://iiif.io/api/presentation/3/context.json"
+        ],
+        "created": "2024-10-08T06:31:49.202Z",
+        "modified": "2024-10-08T06:31:49.202Z",
+        "motivation": "georeferencing",
+        "target": {
+          "type": "SpecificResource",
+          "source": {
+            "id": "https://dlc.services/iiif-img/7/33/ff0baf87fd663c0ca2478e02690a64de",
+            "type": "ImageService2",
+            "height": 768,
+            "width": 7000,
+            "partOf": [
+              {
+                "id": "https://dlc.services/iiif-img/7/33/ff0baf87fd663c0ca2478e02690a64de/canvas/c/30",
+                "type": "Canvas",
+                "label": {
+                  "none": [
+                    "Canvas 30"
+                  ]
+                },
+                "partOf": [
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site/scans-stadsarchief-rotterdam",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site/scans-stadsarchief-rotterdam/scans-theo",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "https://dlc.services/iiif-img/7/33/ff0baf87fd663c0ca2478e02690a64de/canvas/c/54",
+                "type": "Canvas",
+                "label": {
+                  "none": [
+                    "Canvas 54"
+                  ]
+                },
+                "partOf": [
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/bathing-site",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "https://dlc.services/iiif-img/7/33/ff0baf87fd663c0ca2478e02690a64de/canvas/c/57",
+                "type": "Canvas",
+                "label": {
+                  "none": [
+                    "Canvas 57"
+                  ]
+                },
+                "partOf": [
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  },
+                  {
+                    "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
+                    "type": "Manifest",
+                    "label": {
+                      "none": [
+                        "Generated from 'string1string2string3' named query"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "selector": {
+            "type": "SvgSelector",
+            "value": "<svg width=\"7000\" height=\"768\"><polygon points=\"2,259 5351,260 5349,441 -7,434\" /></svg>"
+          }
+        },
+        "body": {
+          "type": "FeatureCollection",
+          "transformation": {
+            "type": "polynomial",
+            "options": {
+              "order": 1
+            }
+          },
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  14,
+                  429
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1239956,
+                  51.9922165
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  5351,
+                  440
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.120436,
+                  51.9887951
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "resourceCoords": [
+                  14,
+                  279
+                ]
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  4.1243489,
+                  51.9920727
+                ]
+              }
+            }
+          ],
+          "_allmaps": {
+            "id": "https://annotations.allmaps.org/maps/e6dce1fc29fc05f2",
+            "version": "https://annotations.allmaps.org/maps/e6dce1fc29fc05f2@c78f3c3f5e2d1b42",
+            "image": {
+              "id": "https://annotations.allmaps.org/images/8d4074b60464f790",
+              "version": "https://annotations.allmaps.org/images/8d4074b60464f790@ee7400df0f35c032",
+              "canvases": [
+                {
+                  "id": "https://annotations.allmaps.org/canvases/68996fce5cd178a6",
+                  "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/627270e057c38eb2"
+                    },
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/f2f6e2489e0a23a6"
+                    }
+                  ]
+                },
+                {
+                  "id": "https://annotations.allmaps.org/canvases/e6f25b8b8b25aa30",
+                  "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/cc9286f5a5570b4f"
+                    },
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+                    }
+                  ]
+                },
+                {
+                  "id": "https://annotations.allmaps.org/canvases/bf026ea4eee38fbb",
+                  "manifests": [
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+                    },
+                    {
+                      "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
+                    }
+                  ]
+                }
+              ]
+            },
+            "scale": 7.802054,
+            "area": 15651.96
+          }
+        }
+      }
+    ]
+  }
