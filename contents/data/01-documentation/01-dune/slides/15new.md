@@ -20,17 +20,6 @@ allmaps:
 geojson:
   - filename: dl-15new.geojson
     label: railway
-legend:
-  - label: Road
-    fill: 
-    fill-opacity: 
-    stroke: '#E8B500'
-    stroke-opacity: 1
-  - label: Waterway and harbor
-    fill: 
-    fill-opacity: 
-    stroke: '#63d8e6'
-    stroke-opacity: 1
 ---
 
 # The Dune Village
