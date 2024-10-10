@@ -375,7 +375,7 @@
 				// Reset styles
 				vectorSource.forEachFeature(function (feature) {
 					let properties = feature.getProperties()
-					if (properties.label) {
+					if (properties.link) {
 						const customStyle = parseCustomFeatureStyle(properties)
 						feature.setStyle(customStyle)
 					}
@@ -384,8 +384,10 @@
 
 				// Set styles
 				if (properties?.label) {
-					feature.setStyle(selectedStyles)
 					map.getTargetElement().style.cursor = 'pointer'
+					if (properties.link) {
+						feature.setStyle(selectedStyles)
+					}
 				}
 			})
 		})
