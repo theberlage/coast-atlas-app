@@ -21,6 +21,7 @@ export type MarkdownSlide = {
 			{
 				label?: string
 				filename: string
+				transformation?: string
 				opacity?: number
 				saturation?: number
 				colorize?: string

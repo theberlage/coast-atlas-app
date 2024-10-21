@@ -247,8 +247,15 @@
 			}
 		}
 		for (const [id, annotation] of newWarpedMapSource) {
+			const properties = annotation.properties
 			// Only add new maps to WarpedMapSource
 			if (!currentWarpedMapSource.has(id)) {
+				// Use warpedMapLayer API after updating OL plugin
+				if (properties.transformation === 'thinPlateSpline') {
+					annotation.body.transformation = {
+						type: 'thinPlateSpline'
+					}
+				}
 				await warpedMapSource.addGeoreferenceAnnotation(annotation)
 				addedCount++
 			} else {
@@ -257,7 +264,6 @@
 				existingCount++
 			}
 			// Set properties
-			const properties = annotation.properties
 			if (properties.opacity !== undefined) {
 				let opacity = properties.opacity / 100
 				warpedMapLayer.setMapOpacity(id, opacity)
