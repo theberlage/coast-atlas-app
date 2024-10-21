@@ -247,8 +247,15 @@
 			}
 		}
 		for (const [id, annotation] of newWarpedMapSource) {
+			const properties = annotation.properties
 			// Only add new maps to WarpedMapSource
 			if (!currentWarpedMapSource.has(id)) {
+				// Use warpedMapLayer API after updating OL plugin
+				if (properties.transformation === 'thinPlateSpline') {
+					annotation.body.transformation = {
+						type: 'thinPlateSpline'
+					}
+				}
 				await warpedMapSource.addGeoreferenceAnnotation(annotation)
 				addedCount++
 			} else {
@@ -257,7 +264,6 @@
 				existingCount++
 			}
 			// Set properties
-			const properties = annotation.properties
 			if (properties.opacity !== undefined) {
 				let opacity = properties.opacity / 100
 				warpedMapLayer.setMapOpacity(id, opacity)
@@ -375,7 +381,7 @@
 				// Reset styles
 				vectorSource.forEachFeature(function (feature) {
 					let properties = feature.getProperties()
-					if (properties.label) {
+					if (properties.link) {
 						const customStyle = parseCustomFeatureStyle(properties)
 						feature.setStyle(customStyle)
 					}
@@ -384,8 +390,10 @@
 
 				// Set styles
 				if (properties?.label) {
-					feature.setStyle(selectedStyles)
 					map.getTargetElement().style.cursor = 'pointer'
+					if (properties.link) {
+						feature.setStyle(selectedStyles)
+					}
 				}
 			})
 		})
