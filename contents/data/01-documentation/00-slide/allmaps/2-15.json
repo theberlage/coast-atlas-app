@@ -9,8 +9,8 @@
         "http://iiif.io/api/extension/georef/1/context.json",
         "http://iiif.io/api/presentation/3/context.json"
       ],
-      "created": "2024-12-17T13:25:01.117Z",
-      "modified": "2024-12-17T13:25:01.117Z",
+      "created": "2024-12-18T08:48:11.607Z",
+      "modified": "2024-12-18T08:48:11.607Z",
       "motivation": "georeferencing",
       "target": {
         "type": "SpecificResource",
@@ -22,7 +22,7 @@
         },
         "selector": {
           "type": "SvgSelector",
-          "value": "<svg width=\"23339\" height=\"6616\"><polygon points=\"13415,5566 13416,4172 14925,4169 14932,2919 13370,2948 743,2943 719,5626\" /></svg>"
+          "value": "<svg width=\"23339\" height=\"6616\"><polygon points=\"13415,5566 13416,4172 14889,4188 14891,2939 13370,2948 743,2943 719,5626\" /></svg>"
         }
       },
       "body": {
@@ -85,14 +85,14 @@
         ],
         "_allmaps": {
           "id": "https://annotations.allmaps.org/maps/a80cf38828223dee",
-          "version": "https://annotations.allmaps.org/maps/a80cf38828223dee@f26bd44a931fc13c",
+          "version": "https://annotations.allmaps.org/maps/a80cf38828223dee@5fc83dca70299fd7",
           "image": {
             "id": "https://annotations.allmaps.org/images/6b1ca8067efb2d00",
-            "version": "https://annotations.allmaps.org/images/6b1ca8067efb2d00@162813493a8f2278",
+            "version": "https://annotations.allmaps.org/images/6b1ca8067efb2d00@6b34cadd5721462e",
             "canvases": []
           },
-          "scale": 1.660214,
-          "area": 12876631.94
+          "scale": 1.660215,
+          "area": 12858926.81
         }
       }
     }
