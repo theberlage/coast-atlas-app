@@ -251,9 +251,10 @@
 			// Only add new maps to WarpedMapSource
 			if (!currentWarpedMapSource.has(id)) {
 				// Use warpedMapLayer API after updating OL plugin
-				if (properties.transformation === 'thinPlateSpline') {
+				const supportedTransformations = ['thinPlateSpline', 'helmert']
+				if (supportedTransformations.includes(properties.transformation)) {
 					annotation.body.transformation = {
-						type: 'thinPlateSpline'
+						type: properties.transformation
 					}
 				}
 				await warpedMapSource.addGeoreferenceAnnotation(annotation)
