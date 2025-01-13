@@ -1,0 +1,1900 @@
+{
+	"type": "AnnotationPage",
+	"@context": "http://www.w3.org/ns/anno.jsonld",
+	"items": [
+		{
+			"id": "https://annotations.allmaps.org/maps/2bfd6ad640d54175",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2025-01-08T21:31:06.950Z",
+			"modified": "2025-01-08T21:31:06.950Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/1e9206dd67ad3ee4b87a26228812ac10",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/1e9206dd67ad3ee4b87a26228812ac10/canvas/c/7",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 7"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3645, 1363]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.168634, 52.0304188]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3319, 1580]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1678692, 52.0308277]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3640, 1286]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1689505, 52.0304675]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3599, 1367]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1685593, 52.0305134]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3852, 1116]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1695142, 52.0300648]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/2bfd6ad640d54175",
+					"version": "https://annotations.allmaps.org/maps/2bfd6ad640d54175@b0e9e65098004ad0",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/9bc158b325fd828a",
+						"version": "https://annotations.allmaps.org/images/9bc158b325fd828a@2b403990c54111ea",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/10a030c94cc87e76",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 5.089439,
+					"area": 1343751.6
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/2e767603ff8396e5",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2025-01-07T23:03:03.102Z",
+			"modified": "2025-01-07T23:03:03.102Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/622c15dc861617c00dd0c0217732e8f9",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/622c15dc861617c00dd0c0217732e8f9/canvas/c/12",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 12"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"26,27 4961,29 4960,7037 -34,7038\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1663, 3212]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1154765, 51.9851276]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2829, 4362]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1153585, 51.9850542]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3258, 3953]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1153991, 51.9850219]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/2e767603ff8396e5",
+					"version": "https://annotations.allmaps.org/maps/2e767603ff8396e5@67fc0e10af473b3a",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/eedab5c458579ba2",
+						"version": "https://annotations.allmaps.org/images/eedab5c458579ba2@dbfce014dd415dcb",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/f60ff4c9f9f5bf27",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 136.708384,
+					"area": 1861.97
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/1cfbc491b2ed769a",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2025-01-07T22:51:16.315Z",
+			"modified": "2025-01-07T22:51:16.315Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/70b871efe2456b3ddacf01f8ec404ce2",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/70b871efe2456b3ddacf01f8ec404ce2/canvas/c/11",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 11"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"-10,4 4968,3 4977,7060 4,7016\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3595, 3407]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1157303, 51.9847175]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2190, 4811]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1155401, 51.9848066]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1730, 3262]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.115758, 51.9848755]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/1cfbc491b2ed769a",
+					"version": "https://annotations.allmaps.org/maps/1cfbc491b2ed769a@7625963b07f7f2d7",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/3f12de860a6a7422",
+						"version": "https://annotations.allmaps.org/images/3f12de860a6a7422@6aa496670bf2cd94",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/a52451008a3d3623",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 106.550135,
+					"area": 3082.9
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/37d2434123f02682",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2025-01-07T22:14:01.670Z",
+			"modified": "2025-01-07T22:14:01.670Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/9994f7cb1c2128bf924b87a14a4cc7ee",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/9994f7cb1c2128bf924b87a14a4cc7ee/canvas/c/13",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 13"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"20,26 4973,18 4961,7018 13,7026\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2394, 3842]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1544791, 52.0158442]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3017, 3236]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1544418, 52.0157698]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1204, 2631]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1547428, 52.0157882]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/37d2434123f02682",
+					"version": "https://annotations.allmaps.org/maps/37d2434123f02682@2a7dad80e051d1bd",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/27a6d4317262beb6",
+						"version": "https://annotations.allmaps.org/images/27a6d4317262beb6@f68351066cf1f98b",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/9d97634b70125917",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 94.331294,
+					"area": 3894.35
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/4f34038d5812d490",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2025-01-06T16:10:09.148Z",
+			"modified": "2025-01-06T16:10:09.148Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/f04019809075cbacc2dca0f65b65682c",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/f04019809075cbacc2dca0f65b65682c/canvas/c/10",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 10"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2724, 4148]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2821315, 52.1137154]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [4702, 4617]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2821039, 52.1135801]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2086, 2275]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2823483, 52.1138206]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3932, 5348]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2820029, 52.1136323]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/4f34038d5812d490",
+					"version": "https://annotations.allmaps.org/maps/4f34038d5812d490@2ac18764aec11a69",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/53d549b1659a220c",
+						"version": "https://annotations.allmaps.org/images/53d549b1659a220c@90650f3a8dfe69ca",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/eb1936e59ed1008a",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 124.48603,
+					"area": 2246.04
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/317a46078dd5b2ef",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2025-01-06T15:57:22.427Z",
+			"modified": "2025-01-06T15:57:22.427Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/e7ab044f1a02eb17ebb3031f45ea981b",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/e7ab044f1a02eb17ebb3031f45ea981b/canvas/c/9",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 9"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2054, 1680]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2790716, 52.1119554]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3897, 3507]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2788753, 52.1118213]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [4232, 3209]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2789228, 52.1117937]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/317a46078dd5b2ef",
+					"version": "https://annotations.allmaps.org/maps/317a46078dd5b2ef@2a4d3cb087d9f9b0",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/fb3d088cf0471ca6",
+						"version": "https://annotations.allmaps.org/images/fb3d088cf0471ca6@c84b6ec4a2a5eef8",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/14f5524ce5b9d6a2",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 113.683407,
+					"area": 2693.18
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/e9c7d5e11a8845b9",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T15:00:27.309Z",
+			"modified": "2024-12-19T15:00:27.309Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/eaae0da419d3cee8e2c765411197f829",
+					"type": "ImageService2",
+					"height": 1684,
+					"width": 1191,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/eaae0da419d3cee8e2c765411197f829/canvas/c/3",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 3"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"1191\" height=\"1684\"><polygon points=\"0,0 0,1684 1191,1684 1191,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [942, 439]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2783522, 52.0853601]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1076, 568]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2781994, 52.085291]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [396, 862]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2781763, 52.0855551]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/e9c7d5e11a8845b9",
+					"version": "https://annotations.allmaps.org/maps/e9c7d5e11a8845b9@e8a208c18dfa85dd",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/f066f0b940fdc1e0",
+						"version": "https://annotations.allmaps.org/images/f066f0b940fdc1e0@51222d4ac1fca1a4",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/d9077632768a71e1",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 19.931906,
+					"area": 5048.43
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/bcbdf0d8461a01c9",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:53:49.517Z",
+			"modified": "2024-12-19T14:53:49.517Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/e9bc65a61f8a57480d86948e26b32b27",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/e9bc65a61f8a57480d86948e26b32b27/canvas/c/17",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 17"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3322, 2756]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3395799, 52.1347145]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2342, 2465]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3395329, 52.1348502]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3170, 2211]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3396903, 52.134745]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2129, 3221]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3393963, 52.1347896]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/bcbdf0d8461a01c9",
+					"version": "https://annotations.allmaps.org/maps/bcbdf0d8461a01c9@3de2755b9a63c053",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/edd894c8685a89fa",
+						"version": "https://annotations.allmaps.org/images/edd894c8685a89fa@aa7317aefb03298b",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/b2710e3c5390ff72",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 68.170506,
+					"area": 7489.72
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/25e597365a64d9ef",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:51:08.675Z",
+			"modified": "2024-12-19T14:51:08.675Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/42b6f62ab517d48faf2421a697e577dd",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/42b6f62ab517d48faf2421a697e577dd/canvas/c/16",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 16"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1121, 2341]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.353972, 52.1506517]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3639, 4772]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3530232, 52.1509165]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3333, 2371]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3533022, 52.1505148]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/25e597365a64d9ef",
+					"version": "https://annotations.allmaps.org/maps/25e597365a64d9ef@f17d74b02e62e524",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/ba54633c26cbd0ee",
+						"version": "https://annotations.allmaps.org/images/ba54633c26cbd0ee@a7149aecf228b853",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/0777f7dea06f6295",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 47.598967,
+					"area": 15362.57
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/317750d37a1ee1a9",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:44:45.567Z",
+			"modified": "2024-12-19T14:44:45.567Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/72e0673aaab4664aee2c6b8eadff8210",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/72e0673aaab4664aee2c6b8eadff8210/canvas/c/15",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 15"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"1159,2542 778,2917 874,3270 873,3367 817,3428 899,3707 841,4595 824,4607 822,4905 900,5194 617,5477 620,5590 717,5593 948,5360 1419,5489 1760,5146 1759,4844 1743,4808 1725,4545 2125,4144 2127,4043 2057,4050 1716,4387 1688,3822 1710,3741 1770,3680 1713,3484 1714,3285 1811,3187 1669,2677\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1413, 5250]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1271355, 51.9789506]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1742, 4933]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1272402, 51.9790349]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [967, 5126]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1269528, 51.9789724]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/317750d37a1ee1a9",
+					"version": "https://annotations.allmaps.org/maps/317750d37a1ee1a9@9733bf5678e6adb0",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/b006ef07716db012",
+						"version": "https://annotations.allmaps.org/images/b006ef07716db012@4c7a103025f6151b",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/6a77176296f5321f",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 36.708318,
+					"area": 1868.88
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/a451769256e2097e",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:44:45.567Z",
+			"modified": "2024-12-19T14:44:45.567Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/72e0673aaab4664aee2c6b8eadff8210",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/72e0673aaab4664aee2c6b8eadff8210/canvas/c/15",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 15"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"3399,230 3244,368 3243,541 2994,617 2692,1136 2741,1706 2781,1810 2775,4332 2665,4630 2666,5024 2884,5252 2648,5492 2654,5588 2770,5595 3005,5370 3302,5701 4195,5515 4490,4623 4482,4226 4357,4088 4855,3563 4863,3393 4733,3392 4342,3787 4346,1707 4422,1366 4294,683 3628,485 3602,301\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3315, 5395]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2024904, 52.045484]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2723, 4755]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2023829, 52.0454664]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [4160, 5248]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2025253, 52.0455525]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/a451769256e2097e",
+					"version": "https://annotations.allmaps.org/maps/a451769256e2097e@79808a18bae39427",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/b006ef07716db012",
+						"version": "https://annotations.allmaps.org/images/b006ef07716db012@4c7a103025f6151b",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/6a77176296f5321f",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 110.384788,
+					"area": 674.99
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/84570de88c3464d2",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:30:38.174Z",
+			"modified": "2024-12-19T14:30:38.174Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/46beb9b909f31b20ee45616c0dbe49f6",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/46beb9b909f31b20ee45616c0dbe49f6/canvas/c/8",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 8"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2336, 999]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1669774, 52.0313015]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2046, 1289]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1669226, 52.0313383]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2094, 697]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.167062, 52.0313424]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/84570de88c3464d2",
+					"version": "https://annotations.allmaps.org/maps/84570de88c3464d2@6b38059bc8162d90",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/9d5b1e7fe946f0f1",
+						"version": "https://annotations.allmaps.org/images/9d5b1e7fe946f0f1@f8f0a98cbc2070ad",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/cd60da8eee832c22",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 62.11439,
+					"area": 9021.41
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/720bb661a8ba34f7",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:29:28.951Z",
+			"modified": "2024-12-19T14:29:28.951Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/edd47e2760bd21432cbf03a9761ea29c",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/edd47e2760bd21432cbf03a9761ea29c/canvas/c/6",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 6"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1138, 2090]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1273725, 51.9751828]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2720, 3496]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1271967, 51.9749757]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3773, 2385]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1273974, 51.9748959]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/720bb661a8ba34f7",
+					"version": "https://annotations.allmaps.org/maps/720bb661a8ba34f7@ceb2efba8897e278",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/29344c6a36164fda",
+						"version": "https://annotations.allmaps.org/images/29344c6a36164fda@c7b5aa73087ddb3a",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/0f08f16f9a1ef099",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 87.28116,
+					"area": 4568.96
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/d71eefe5678a8de1",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:23:38.235Z",
+			"modified": "2024-12-19T14:23:38.235Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/e1387d2ce3b3d3249954b37e9d38812f",
+					"type": "ImageService2",
+					"height": 1684,
+					"width": 1191,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/e1387d2ce3b3d3249954b37e9d38812f/canvas/c/4",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 4"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"1191\" height=\"1684\"><polygon points=\"0,0 0,1684 1191,1684 1191,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1160, 621]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2973244, 52.103827]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [435, 1348]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.2975773, 52.1039934]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [23, 944]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.297759, 52.1038902]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/d71eefe5678a8de1",
+					"version": "https://annotations.allmaps.org/maps/d71eefe5678a8de1@ed110e5bc58c6393",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/6229a5d7751d1c23",
+						"version": "https://annotations.allmaps.org/images/6229a5d7751d1c23@438a4334d98f71cf",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/0e56b219415ee9aa",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 37.139611,
+					"area": 1454.05
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/91df0af7414cc251",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:23:19.359Z",
+			"modified": "2024-12-19T14:23:19.359Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/0c6566b67b9d5b4ff7221db8f973fc07",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/0c6566b67b9d5b4ff7221db8f973fc07/canvas/c/5",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 5"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3308, 5699]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1279986, 51.9753141]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1352, 3897]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1281548, 51.975485]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [706, 4496]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1280846, 51.9755122]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/91df0af7414cc251",
+					"version": "https://annotations.allmaps.org/maps/91df0af7414cc251@57d03ed7f3b866e4",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/f482e8b95a7acedf",
+						"version": "https://annotations.allmaps.org/images/f482e8b95a7acedf@0406f192643c1b31",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/eb7bf96cbe5b3d5b",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 137.12933,
+					"area": 1850.96
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/a477f8be5042a84c",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:20:50.910Z",
+			"modified": "2024-12-19T14:20:50.910Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/c1206d34c981f1fb75fe1a36459fa863",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/c1206d34c981f1fb75fe1a36459fa863/canvas/c/1",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 1"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2631, 4212]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1158113, 51.9926741]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3104, 3746]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1158972, 51.9926011]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1921, 3493]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1160292, 51.992771]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/a477f8be5042a84c",
+					"version": "https://annotations.allmaps.org/maps/a477f8be5042a84c@488d12491be05027",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/21ea201f66550f5a",
+						"version": "https://annotations.allmaps.org/images/21ea201f66550f5a@590321bfcf79666f",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/c4807f1f8d564c3f",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 60.191599,
+					"area": 9606.98
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/4dbad431adc93769",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:16:26.415Z",
+			"modified": "2024-12-19T14:16:26.415Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/2b71e61f2892994aff7699672823eeaa",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/2b71e61f2892994aff7699672823eeaa/canvas/c/14",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 14"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1597, 6226]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3065446, 52.1171616]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1896, 6521]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3066033, 52.1171517]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [3455, 4967]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.3066713, 52.1173293]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/4dbad431adc93769",
+					"version": "https://annotations.allmaps.org/maps/4dbad431adc93769@0557d88d51530fb7",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/7ee045c39c6a429d",
+						"version": "https://annotations.allmaps.org/images/7ee045c39c6a429d@ca4cb535f8f4a6cc",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/27be216f440a5015",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 104.546369,
+					"area": 3184.5
+				}
+			}
+		},
+		{
+			"id": "https://annotations.allmaps.org/maps/cbca3c0347964fcc",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2024-12-19T14:13:42.169Z",
+			"modified": "2024-12-19T14:13:42.169Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/475d9bb53455c7dfd22a0661c92b8fb5",
+					"type": "ImageService2",
+					"height": 7016,
+					"width": 4961,
+					"partOf": [
+						{
+							"id": "https://dlc.services/iiif-img/7/33/475d9bb53455c7dfd22a0661c92b8fb5/canvas/c/2",
+							"type": "Canvas",
+							"label": {
+								"none": ["Canvas 2"]
+							},
+							"partOf": [
+								{
+									"id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/drawings-georeferencing-exhibition",
+									"type": "Manifest",
+									"label": {
+										"none": ["Generated from 'string1string2string3' named query"]
+									}
+								}
+							]
+						}
+					]
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"0,0 0,7016 4961,7016 4961,0\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1532, 2807]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1244125, 51.991764]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1177, 2449]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1244593, 51.9918025]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [1951, 2388]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1244846, 51.9917274]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/cbca3c0347964fcc",
+					"version": "https://annotations.allmaps.org/maps/cbca3c0347964fcc@d2e4b39e6881a91c",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/57fb56031df46e04",
+						"version": "https://annotations.allmaps.org/images/57fb56031df46e04@cc972157c7238352",
+						"canvases": [
+							{
+								"id": "https://annotations.allmaps.org/canvases/02258566c5a9713c",
+								"manifests": [
+									{
+										"id": "https://annotations.allmaps.org/manifests/eaf6e55be6ee7fb2"
+									}
+								]
+							}
+						]
+					},
+					"scale": 93.316248,
+					"area": 3997.09
+				}
+			}
+		}
+	]
+}
