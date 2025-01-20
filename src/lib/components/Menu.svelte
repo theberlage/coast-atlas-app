@@ -110,15 +110,17 @@
 					{#each [...slideshows.entries()] as [slideshow, [{ frontmatter }]]}
 						{#if !frontmatter.meta.hidden}
 							{#if frontmatter.meta.chapter}
-								<li class="chapter">
-									{#if frontmatter.meta.link}
+								{#if frontmatter.meta.link}
+									<li class="slideshow">
 										<a on:click={toggleMenu} on:click={() => (hover = true)} href="#/{chapter}"
 											>{frontmatter.meta.heading}</a
 										>
-									{:else}
+									</li>
+								{:else}
+									<li class="chapter">
 										{frontmatter.meta.heading}
-									{/if}
-								</li>
+									</li>
+								{/if}
 							{:else}
 								<li class="slideshow">
 									<a
@@ -214,7 +216,8 @@
 		list-style-type: none;
 	}
 	.chapter {
-		padding-bottom: 1rem;
+		padding: 1rem 0;
+		color: lightgray;
 	}
 	.slideshow {
 		padding-left: 1rem;
