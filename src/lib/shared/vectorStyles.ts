@@ -1,30 +1,33 @@
 import { Fill, Stroke, Circle, Style } from 'ol/style.js'
 import { hexToRGBA } from './utils.js'
+import settings from './settings.js'
+
+const defaults = settings.vectorFeatures
 
 export const defaultStyles = new Style({
 	stroke: new Stroke({
-		color: 'yellow',
-		width: 2
+		color: defaults.default.stroke.color,
+		width: defaults.default.stroke.width
 	}),
 	fill: new Fill({
-		color: 'rgba(255, 255, 0, 0)'
+		color: defaults.default.fill.color
 	})
 })
 
 export const selectedStyles = new Style({
 	stroke: new Stroke({
-		color: 'yellow',
-		width: 2
+		color: defaults.selected.stroke.color,
+		width: defaults.selected.stroke.width
 	}),
 	fill: new Fill({
-		color: 'yellow'
+		color: defaults.selected.fill.color
 	}),
 	image: new Circle({
-		radius: 6,
-		fill: new Fill({ color: 'rgba(255, 255, 0, 1)' }),
+		radius: defaults.selected.point.radius,
+		fill: new Fill({ color: defaults.selected.point.fill }),
 		stroke: new Stroke({
-			color: 'rgba(255, 255, 0, 1)',
-			width: 4
+			color: defaults.selected.point.stroke.color,
+			width: defaults.selected.point.stroke.width
 		})
 	})
 	// zIndex: 5
@@ -32,18 +35,18 @@ export const selectedStyles = new Style({
 
 export const selectableStyles = new Style({
 	stroke: new Stroke({
-		color: 'yellow',
-		width: 4
+		color: defaults.selectable.stroke.color,
+		width: defaults.selectable.stroke.width
 	}),
 	fill: new Fill({
-		color: 'rgba(255, 255, 255, 0)'
+		color: defaults.selectable.fill.color
 	}),
 	image: new Circle({
-		radius: 6,
-		fill: new Fill({ color: 'rgba(255, 255, 0, 1)' }),
+		radius: defaults.selectable.point.radius,
+		fill: new Fill({ color: defaults.selectable.point.fill }),
 		stroke: new Stroke({
-			color: 'black',
-			width: 4
+			color: defaults.selectable.point.stroke.color,
+			width: defaults.selectable.point.stroke.width
 		})
 	}),
 	zIndex: 4

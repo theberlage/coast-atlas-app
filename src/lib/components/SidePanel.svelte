@@ -24,9 +24,7 @@
 	$: flyX = innerWidth < 700 ? 0 : 400
 	$: flyY = innerWidth < 700 ? innerHeight : 0
 
-	$: if (innerWidth > 700) {
-		panel.set(true)
-	} else {
+	$: if (innerWidth < 700) {
 		panel.set(false)
 	}
 

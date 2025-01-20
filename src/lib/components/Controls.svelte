@@ -11,6 +11,7 @@
 	import { panel, menu, bear } from '$lib/shared/stores/componentStates.js'
 	import { next, prev } from '$lib/shared/svgs.js'
 	import { fly, slide as slideTransition, fade } from 'svelte/transition'
+	import settings from '$lib/shared/settings.js'
 
 	$: title = $data?.frontmatter.meta.heading
 
@@ -89,7 +90,7 @@
 				</button>
 			</div>
 		{:else}
-			<div class="grid-item start">Select a location on the map</div>
+			<div class="grid-item start">{settings.controlText}</div>
 		{/if}
 		<div class:panel-overview={$overview} class="grid-item panel title">
 			{title}
