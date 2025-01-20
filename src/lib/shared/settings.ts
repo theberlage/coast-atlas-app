@@ -6,7 +6,7 @@ const settings = {
 		default: {
 			textColor: 'rgb(53, 110, 79)',
 			// Can only be black or white!
-			buttons: 'white'
+			buttons: 'black'
 		},
 		argumentation: {
 			textColor: 'rgb(53, 110, 79)'
