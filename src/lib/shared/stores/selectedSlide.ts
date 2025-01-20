@@ -1,6 +1,7 @@
 import { readable, writable, derived, get } from 'svelte/store'
 import { slideData } from '$lib/shared/stores/markdownSlides.js'
 import { fetchJson } from '$lib/shared/utils.js'
+import settings from '../settings.js'
 
 export let selectedChapter = writable<string | undefined>(undefined)
 export let selectedSlideShow = writable<string | undefined>(undefined)
@@ -15,12 +16,18 @@ const selectedChapterData = derived(
 	}
 )
 
-export const black = derived(selectedChapter, ($selectedChapter) =>
-	$selectedChapter === 'documentation' ? true : false
-)
+export const black = derived(selectedChapter, ($selectedChapter) => {
+	const setting =
+		settings.chapterStyles[$selectedChapter]?.buttons || settings.chapterStyles.default.buttons
+	if (setting === 'black') {
+		return true
+	} else return false
+})
 
 export const textColor = derived(selectedChapter, ($selectedChapter) =>
-	$selectedChapter === 'documentation' ? 'rgb(119, 63, 63)' : 'rgb(53, 110, 79)'
+	$selectedChapter && settings.chapterStyles[$selectedChapter]?.textColor
+		? settings.chapterStyles[$selectedChapter].textColor
+		: settings.chapterStyles.default.textColor
 )
 
 const selectedSlideShowData = derived(
