@@ -3,6 +3,9 @@ export type MarkdownSlide = {
 	frontmatter: {
 		meta: {
 			heading: string
+			chapter?: boolean
+			link?: boolean
+			hidden?: boolean
 		}
 		viewer: {
 			bbox: Array<number>
