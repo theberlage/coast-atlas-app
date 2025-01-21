@@ -3,7 +3,7 @@
 	"features": [
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/argumentation/seaside-buildings/6", "label": "B.2 A Kurhaus." },
+			"properties": { "radius": 10, "link": "#/argumentation/seaside-buildings/6", "label": "B.2 and a Kurhaus." },
 			"geometry": { "type": "Point", "coordinates": [4.282205, 52.11376] }
 		},
 		{
@@ -18,7 +18,7 @@
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/argumentation/seaside-buildings/14", "label": "B.4 A Wooden Camp City." },
+			"properties": { "radius": 10, "link": "#/argumentation/seaside-buildings/14", "label": "B.4 and a Wooden Camp City." },
 			"geometry": { "type": "Point", "coordinates": [4.124326, 51.991664] }
 		}
 
