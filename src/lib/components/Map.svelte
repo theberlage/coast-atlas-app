@@ -544,8 +544,8 @@
 
 	#overlay {
 		position: absolute;
-		min-width: 200px;
-		max-width: 600px;
+		min-width: 270px;
+		max-width: 700px;
 		/* width: auto; */
 	}
 
@@ -658,6 +658,6 @@
 		}
 	}
 
-	@media all and (max-width: 700px) {
+	@media all and (max-width: 2000px) {
 	}
 </style>
