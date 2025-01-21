@@ -41,14 +41,14 @@
 	<div class="container">
 		<div class="logo">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 249">
-				<g fill="rgb(252,217,213)" fill-rule="nonzero" id="group_artwork">
+				<g fill="RGB(250, 220, 233)" fill-rule="nonzero" id="group_artwork">
 					<path
 						id="body"
 						d="M137.8,108c15.6-8.5,26.2-25,26.2-44c0-27.6-22.4-50-50-50H14v94H0v127h180V108H137.8z M114,221H14V121h100
         c27.6,0,50,22.4,50,50S141.6,221,114,221z"
 					/>
 				</g>
-				<g stroke="rgb(119, 63, 63)" fill="none" stroke-width="6">
+				<g stroke="RGB(135, 117, 125)" fill="none" stroke-width="6">
 					<circle
 						class="circle"
 						class:circle-transform-cw={hover}
