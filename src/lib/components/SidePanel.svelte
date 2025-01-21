@@ -100,12 +100,6 @@
 							</dt>
 							<dd>{item.label}</dd>
 						{/each}
-						{#if annotations && $chapter === 'argumentation'}
-							<dt>
-								{@html gcpMarker}
-							</dt>
-							<dd>Ground Control Point</dd>
-						{/if}
 					</dl>
 				{/if}
 				{#if annotations || xyz}
