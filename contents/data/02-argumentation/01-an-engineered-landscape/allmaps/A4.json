@@ -1,100 +1,100 @@
 {
-    "type": "AnnotationPage",
-    "@context": "http://www.w3.org/ns/anno.jsonld",
-    "items": [
-      {
-        "id": "https://annotations.allmaps.org/maps/c09452c154c1772b",
-        "type": "Annotation",
-        "@context": [
-          "http://iiif.io/api/extension/georef/1/context.json",
-          "http://iiif.io/api/presentation/3/context.json"
-        ],
-        "created": "2025-01-18T21:18:06.120Z",
-        "modified": "2025-01-18T21:18:06.120Z",
-        "motivation": "georeferencing",
-        "target": {
-          "type": "SpecificResource",
-          "source": {
-            "id": "https://dlc.services/iiif-img/7/33/e681ba21217cceddd294b74619a2da63",
-            "type": "ImageService2",
-            "height": 7016,
-            "width": 4961
-          },
-          "selector": {
-            "type": "SvgSelector",
-            "value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"2417,189 2164,445 2169,828 1904,1314 1775,1447 1783,2086 1480,2395 1491,5033 1299,5235 1306,5378 1375,5457 1311,6025 1312,6414 1116,6616 1123,6774 1534,6788 1681,6931 2307,6316 2511,6411 2689,6400 2803,6917 2975,6912 2981,6824 2868,6386 3001,6270 3372,6647 3470,6642 3473,6491 3085,6093 3093,5844 3025,5634 3394,5248 3393,5105 3735,4763 3736,4559 3598,4560 3358,4790 3246,4671 3203,4232 3277,4143 3277,4033 3200,3942 3203,1235 3015,780 2927,665 2918,461 2939,416 2940,337 2782,178\" /></svg>"
+  "type": "AnnotationPage",
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "items": [
+    {
+      "id": "https://annotations.allmaps.org/maps/27f33ffa337298f2",
+      "type": "Annotation",
+      "@context": [
+        "http://iiif.io/api/extension/georef/1/context.json",
+        "http://iiif.io/api/presentation/3/context.json"
+      ],
+      "created": "2025-01-20T21:18:37.084Z",
+      "modified": "2025-01-20T21:18:37.084Z",
+      "motivation": "georeferencing",
+      "target": {
+        "type": "SpecificResource",
+        "source": {
+          "id": "https://dlc.services/iiif-img/7/33/0352f49c42c441c3adb807b0a4e8b0f4",
+          "type": "ImageService2",
+          "height": 14031,
+          "width": 9921
+        },
+        "selector": {
+          "type": "SvgSelector",
+          "value": "<svg width=\"9921\" height=\"14031\"><polygon points=\"241,240 240,13790 9677,13789 9678,241\" /></svg>"
+        }
+      },
+      "body": {
+        "type": "FeatureCollection",
+        "transformation": {
+          "type": "polynomial",
+          "options": {
+            "order": 1
           }
         },
-        "body": {
-          "type": "FeatureCollection",
-          "transformation": {
-            "type": "polynomial",
-            "options": {
-              "order": 1
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                2777,
+                12346
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.3065441,
+                52.1171613
+              ]
             }
           },
-          "features": [
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  1380,
-                  6203
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.3065458,
-                  52.1171604
-                ]
-              }
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                3379,
+                12916
+              ]
             },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  1690,
-                  6493
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.3066052,
-                  52.1171518
-                ]
-              }
-            },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  3250,
-                  4939
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.3066715,
-                  52.1173286
-                ]
-              }
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.3066067,
+                52.1171514
+              ]
             }
-          ],
-          "_allmaps": {
-            "id": "https://annotations.allmaps.org/maps/c09452c154c1772b",
-            "version": "https://annotations.allmaps.org/maps/c09452c154c1772b@a7e2ba7b3e606d26",
-            "image": {
-              "id": "https://annotations.allmaps.org/images/545b7b664ebb8a33",
-              "version": "https://annotations.allmaps.org/images/545b7b664ebb8a33@def9592d27d91d69",
-              "canvases": []
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                6508,
+                9788
+              ]
             },
-            "scale": 105.211454,
-            "area": 930.11
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.3066739,
+                52.1173281
+              ]
+            }
           }
+        ],
+        "_allmaps": {
+          "id": "https://annotations.allmaps.org/maps/27f33ffa337298f2",
+          "version": "https://annotations.allmaps.org/maps/27f33ffa337298f2@f869b9c8b098b21a",
+          "image": {
+            "id": "https://annotations.allmaps.org/images/3840ef29b41b3b66",
+            "version": "https://annotations.allmaps.org/images/3840ef29b41b3b66@35db6ace3a6846ca",
+            "canvases": []
+          },
+          "scale": 202.542046,
+          "area": 3116.81
         }
       }
-    ]
-  }
+    }
+  ]
+}

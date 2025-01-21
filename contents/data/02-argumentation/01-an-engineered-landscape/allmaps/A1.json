@@ -1,148 +1,116 @@
 {
-    "type": "AnnotationPage",
-    "@context": "http://www.w3.org/ns/anno.jsonld",
-    "items": [
-      {
-        "id": "https://annotations.allmaps.org/maps/0a32fb7875f01567",
-        "type": "Annotation",
-        "@context": [
-          "http://iiif.io/api/extension/georef/1/context.json",
-          "http://iiif.io/api/presentation/3/context.json"
-        ],
-        "created": "2025-01-17T08:20:30.330Z",
-        "modified": "2025-01-17T08:20:30.330Z",
-        "motivation": "georeferencing",
-        "target": {
-          "type": "SpecificResource",
-          "source": {
-            "id": "https://dlc.services/iiif-img/7/33/c413c51d4648fd9cfe383794dbca8891",
-            "type": "ImageService2",
-            "height": 14031,
-            "width": 9921
-          },
-          "selector": {
-            "type": "SvgSelector",
-            "value": "<svg width=\"9921\" height=\"14031\"><polygon points=\"265,9073 1976,11353 8694,6315 7625,4836 9918,3144 7718,215 1241,4873 2675,6800 24,8764\" /></svg>"
+  "type": "AnnotationPage",
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "items": [
+    {
+      "id": "https://annotations.allmaps.org/maps/5ac476bdb7be6744",
+      "type": "Annotation",
+      "@context": [
+        "http://iiif.io/api/extension/georef/1/context.json",
+        "http://iiif.io/api/presentation/3/context.json"
+      ],
+      "created": "2025-01-20T20:10:01.208Z",
+      "modified": "2025-01-20T20:10:01.208Z",
+      "motivation": "georeferencing",
+      "target": {
+        "type": "SpecificResource",
+        "source": {
+          "id": "https://dlc.services/iiif-img/7/33/d7fb8a97b07461d3d69878d7d61f82a0",
+          "type": "ImageService2",
+          "height": 14031,
+          "width": 9921
+        },
+        "selector": {
+          "type": "SvgSelector",
+          "value": "<svg width=\"9921\" height=\"14031\"><polygon points=\"240,242 9678,244 9678,11324 243,11326\" /></svg>"
+        }
+      },
+      "body": {
+        "type": "FeatureCollection",
+        "transformation": {
+          "type": "polynomial",
+          "options": {
+            "order": 1
           }
         },
-        "body": {
-          "type": "FeatureCollection",
-          "transformation": {
-            "type": "polynomial",
-            "options": {
-              "order": 1
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                7273,
+                2512
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.1688941,
+                52.0304583
+              ]
             }
           },
-          "features": [
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  7272,
-                  2512
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.1688998,
-                  52.0304572
-                ]
-              }
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                6646,
+                3159
+              ]
             },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  6645,
-                  3155
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.1678664,
-                  52.0308316
-                ]
-              }
-            },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  7264,
-                  2748
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.1685594,
-                  52.0304436
-                ]
-              }
-            },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  6456,
-                  3259
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.1676394,
-                  52.0308922
-                ]
-              }
-            },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  7291,
-                  2723
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.1686117,
-                  52.0304165
-                ]
-              }
-            },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  7179,
-                  1965
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.1698989,
-                  52.0306009
-                ]
-              }
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.1678709,
+                52.03083
+              ]
             }
-          ],
-          "_allmaps": {
-            "id": "https://annotations.allmaps.org/maps/0a32fb7875f01567",
-            "version": "https://annotations.allmaps.org/maps/0a32fb7875f01567@5e29491fe7f5212a",
-            "image": {
-              "id": "https://annotations.allmaps.org/images/fa8f4a68c2d64877",
-              "version": "https://annotations.allmaps.org/images/fa8f4a68c2d64877@6f4fec856bf38e83",
-              "canvases": []
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                7290,
+                2721
+              ]
             },
-            "scale": 10.657368,
-            "area": 437812.71
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.1686103,
+                52.0304158
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                7249,
+                2039
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.1696479,
+                52.0305303
+              ]
+            }
           }
+        ],
+        "_allmaps": {
+          "id": "https://annotations.allmaps.org/maps/5ac476bdb7be6744",
+          "version": "https://annotations.allmaps.org/maps/5ac476bdb7be6744@d0c51921306b5e90",
+          "image": {
+            "id": "https://annotations.allmaps.org/images/93881965ae6a21fd",
+            "version": "https://annotations.allmaps.org/images/93881965ae6a21fd@e976e46d326d168e",
+            "canvases": []
+          },
+          "scale": 10.797859,
+          "area": 896920.2
         }
       }
-    ]
-  }
+    }
+  ]
+}

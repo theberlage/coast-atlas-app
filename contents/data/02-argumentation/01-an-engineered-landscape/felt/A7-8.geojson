@@ -1,0 +1,20 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": { "radius": 10, "link": "#/argumentation/dune/3", "label": "Go to project" },
+			"geometry": { "type": "Point", "coordinates": [4.166369, 52.031234] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "radius": 10, "link": "#/argumentation/dune/10", "label": "Go to project" },
+			"geometry": { "type": "Point", "coordinates": [4.127188, 51.975001] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "radius": 10, "link": "#/argumentation/dune/9", "label": "Go to project" },
+			"geometry": { "type": "Point", "coordinates": [4.128211, 51.975422] }
+		}
+	]
+}

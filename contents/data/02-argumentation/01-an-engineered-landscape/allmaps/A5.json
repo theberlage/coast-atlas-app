@@ -1,100 +1,100 @@
 {
-    "type": "AnnotationPage",
-    "@context": "http://www.w3.org/ns/anno.jsonld",
-    "items": [
-      {
-        "id": "https://annotations.allmaps.org/maps/612e69d20591bb8d",
-        "type": "Annotation",
-        "@context": [
-          "http://iiif.io/api/extension/georef/1/context.json",
-          "http://iiif.io/api/presentation/3/context.json"
-        ],
-        "created": "2025-01-18T21:26:11.725Z",
-        "modified": "2025-01-18T21:26:11.725Z",
-        "motivation": "georeferencing",
-        "target": {
-          "type": "SpecificResource",
-          "source": {
-            "id": "https://dlc.services/iiif-img/7/33/2a5422f7ba97f0f8f777c43446b944aa",
-            "type": "ImageService2",
-            "height": 7016,
-            "width": 4961
-          },
-          "selector": {
-            "type": "SvgSelector",
-            "value": "<svg width=\"4961\" height=\"7016\"><polygon points=\"1258,266 954,480 825,408 688,755 664,923 479,1111 394,962 220,1401 223,1487 264,1510 263,2014 1076,2863 1543,4240 1549,4526 1303,4788 1306,4965 1445,4970 1568,4862 1569,4969 2107,5606 2607,5763 3406,4963 3717,5274 4867,4104 4863,3713 4445,3318 4436,2975 4388,2933 4207,3137 4021,2941 4060,2882 4044,2816 3861,2812 3817,2683 4857,1606 4852,1269 4761,1264 3654,2371 3561,2252 3446,2386 2595,1498 2551,1224 2403,1225 2367,1267 1798,669 1697,490 1597,351 1454,277\" /></svg>"
+  "type": "AnnotationPage",
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "items": [
+    {
+      "id": "https://annotations.allmaps.org/maps/8bfd87f8c119305c",
+      "type": "Annotation",
+      "@context": [
+        "http://iiif.io/api/extension/georef/1/context.json",
+        "http://iiif.io/api/presentation/3/context.json"
+      ],
+      "created": "2025-01-20T21:28:02.781Z",
+      "modified": "2025-01-20T21:28:02.781Z",
+      "motivation": "georeferencing",
+      "target": {
+        "type": "SpecificResource",
+        "source": {
+          "id": "https://dlc.services/iiif-img/7/33/febf5818ac486fa10199bd2fe6ed268d",
+          "type": "ImageService2",
+          "height": 14031,
+          "width": 9921
+        },
+        "selector": {
+          "type": "SvgSelector",
+          "value": "<svg width=\"9921\" height=\"14031\"><polygon points=\"242,241 240,11323 9679,11325 9681,242\" /></svg>"
+        }
+      },
+      "body": {
+        "type": "FeatureCollection",
+        "transformation": {
+          "type": "polynomial",
+          "options": {
+            "order": 1
           }
         },
-        "body": {
-          "type": "FeatureCollection",
-          "transformation": {
-            "type": "polynomial",
-            "options": {
-              "order": 1
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                2098,
+                4490
+              ]
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.3539585,
+                52.1505715
+              ]
             }
           },
-          "features": [
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  3624,
-                  4775
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.3532115,
-                  52.1510713
-                ]
-              }
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                7263,
+                9430
+              ]
             },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  1043,
-                  2293
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.3541366,
-                  52.1507807
-                ]
-              }
-            },
-            {
-              "type": "Feature",
-              "properties": {
-                "resourceCoords": [
-                  3349,
-                  2346
-                ]
-              },
-              "geometry": {
-                "type": "Point",
-                "coordinates": [
-                  4.3533901,
-                  52.1506261
-                ]
-              }
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.35319,
+                52.1509089
+              ]
             }
-          ],
-          "_allmaps": {
-            "id": "https://annotations.allmaps.org/maps/612e69d20591bb8d",
-            "version": "https://annotations.allmaps.org/maps/612e69d20591bb8d@a1d5a5aa74d203cd",
-            "image": {
-              "id": "https://annotations.allmaps.org/images/938b7102a54847ac",
-              "version": "https://annotations.allmaps.org/images/938b7102a54847ac@a9184ef6b85c8f96",
-              "canvases": []
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "resourceCoords": [
+                6704,
+                4592
+              ]
             },
-            "scale": 45.142739,
-            "area": 6719.14
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                4.3533207,
+                52.1505255
+              ]
+            }
           }
+        ],
+        "_allmaps": {
+          "id": "https://annotations.allmaps.org/maps/8bfd87f8c119305c",
+          "version": "https://annotations.allmaps.org/maps/8bfd87f8c119305c@534758aa9af56093",
+          "image": {
+            "id": "https://annotations.allmaps.org/images/11888d82698aa741",
+            "version": "https://annotations.allmaps.org/images/11888d82698aa741@99ddbd9f22bcf800",
+            "canvases": []
+          },
+          "scale": 107.926597,
+          "area": 8980.63
         }
       }
-    ]
-  }
+    }
+  ]
+}
