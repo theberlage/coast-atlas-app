@@ -1,12 +1,11 @@
 <script lang="ts">
 	import { slideData } from '$lib/shared/stores/markdownSlides.js'
-	import { menu, bear } from '$lib/shared/stores/componentStates.js'
+	import { menu } from '$lib/shared/stores/componentStates.js'
 	import { fade } from 'svelte/transition'
 
 	const toggleMenu = () => menu.toggle()
 
 	// Based on eyeball animation: https://codepen.io/GabEsu/pen/VdKjPE
-
 	let marker: SVGCircleElement | undefined
 	let markerRect: DOMRect | undefined
 	let R: number | undefined
@@ -103,29 +102,36 @@
 						{transform}
 					/>
 				</g>
-				{#if $bear}{/if}
 			</svg>
 		</div>
 		<div class="menu-items">
 			<ul class="chapters">
-				{#each [...$slideData.keys()] as chapter}
-					<li>
-						<a on:click={toggleMenu} on:click={() => (hover = true)} href="#/{chapter}"
-							>{chapter.charAt(0).toUpperCase() + chapter.slice(1)}</a
-						>
-					</li>
-					<ul class="slideshows">
-						{#each [...$slideData.get(chapter).keys()].slice(1) as slideshow}
-							<li>
-								<a
-									on:click={toggleMenu}
-									on:click={() => (hover = true)}
-									href="#/{chapter}/{slideshow}/1"
-									>{slideshow.charAt(0).toUpperCase() + slideshow.slice(1)}</a
-								>
-							</li>
-						{/each}
-					</ul>
+				{#each [...$slideData.entries()] as [chapter, slideshows]}
+					{#each [...slideshows.entries()] as [slideshow, [{ frontmatter }]]}
+						{#if !frontmatter.meta.hidden}
+							{#if frontmatter.meta.chapter}
+								{#if frontmatter.meta.link}
+									<li class="slideshow">
+										<a on:click={toggleMenu} on:click={() => (hover = true)} href="#/{chapter}"
+											>{frontmatter.meta.heading}</a
+										>
+									</li>
+								{:else}
+									<li class="chapter">
+										{frontmatter.meta.heading}
+									</li>
+								{/if}
+							{:else}
+								<li class="slideshow">
+									<a
+										on:click={toggleMenu}
+										on:click={() => (hover = true)}
+										href="#/{chapter}/{slideshow}/1">{frontmatter.meta.heading}</a
+									>
+								</li>
+							{/if}
+						{/if}
+					{/each}
 				{/each}
 			</ul>
 		</div>
@@ -209,11 +215,12 @@
 		padding: 0;
 		list-style-type: none;
 	}
-	ul.slideshows {
-		margin: 0;
-		padding-bottom: 1rem;
+	.chapter {
+		padding: 1rem 0;
+		color: lightgray;
+	}
+	.slideshow {
 		padding-left: 1rem;
-		list-style-type: none;
 	}
 	@media all and (max-width: 700px) {
 		ul.chapters {
