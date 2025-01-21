@@ -1,21 +1,21 @@
 const settings = {
 	// Overview text
-	controlText: 'Select a location on the map',
+	controlText: 'Click a point on the map',
 	// Chapter settings
 	chapterStyles: {
 		default: {
-			textColor: 'rgb(53, 110, 79)',
+			textColor: 'rgba(45, 53, 140, 1.0)',
 			// Can only be black or white!
-			buttons: 'black'
+			buttons: 'white'
 		},
 		argumentation: {
-			textColor: 'rgb(53, 110, 79)'
+			textColor: 'rgba(45, 53, 140, 1.0)'
 		},
 		documentation: {
-			textColor: 'rgb(119, 63, 63)'
+			textColor: 'rgba(45, 53, 140, 1.0)'
 		},
 		installation: {
-			textColor: 'rgb(53, 110, 79)'
+			textColor: 'rgba(45, 53, 140, 1.0)'
 		}
 	},
 	// Show side panel
@@ -25,17 +25,17 @@ const settings = {
 		// Default (without href or link property)
 		default: {
 			stroke: {
-				color: 'rgba(255, 255, 0, 1)',
+				color: 'rgba(255, 0, 255, 1.0)',
 				width: 2
 			},
 			fill: {
-				color: 'rgba(255, 255, 0, 0)'
+				color: 'rgba(255, 0, 255, 1.0)'
 			},
 			point: {
 				radius: 6,
-				fill: 'rgba(255, 255, 0, 1)',
+				fill: 'rgba(255, 0, 255, 1.0)',
 				stroke: {
-					color: 'rgba(255, 255, 0, 0)',
+					color: 'rgba(255, 0, 255, 1.0)',
 					width: 4
 				}
 			}
@@ -43,17 +43,17 @@ const settings = {
 		// Selectable features (with href or link property)
 		selectable: {
 			stroke: {
-				color: 'yellow',
+				color: 'rgba(255, 0, 255, 1.0)',
 				width: 4
 			},
 			fill: {
-				color: 'rgba(255, 255, 255, 0)'
+				color: 'rgba(255, 0, 255, 1.0)'
 			},
 			point: {
 				radius: 6,
-				fill: 'rgba(255, 255, 0, 1)',
+				fill: 'rgba(255, 0, 255, 1.0)',
 				stroke: {
-					color: 'rgba(255, 255, 255, 0)',
+					color: 'rgba(255, 0, 255, 1.0)',
 					width: 4
 				}
 			}
@@ -61,17 +61,17 @@ const settings = {
 		// On hover
 		selected: {
 			stroke: {
-				color: 'rgba(255, 255, 0, 1)',
+				color: 'rgba(255, 0, 255, 1.0)',
 				width: 2
 			},
 			fill: {
-				color: 'rgba(255, 255, 0, 1)'
+				color: 'rgba(255, 0, 255, 1.0)'
 			},
 			point: {
 				radius: 6,
-				fill: 'rgba(255, 255, 0, 1)',
+				fill: 'rgba(255, 0, 255, 1.0)',
 				stroke: {
-					color: 'rgba(255, 255, 0, 1)',
+					color: 'rgba(255, 0, 255, 1.0)',
 					width: 4
 				}
 			}

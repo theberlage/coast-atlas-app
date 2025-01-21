@@ -163,7 +163,7 @@
 		text-decoration: none;
 	}
 	a:hover {
-		color: rgba(255, 255, 114);
+		color: rgba(255, 0, 255, 1.0);
 		text-decoration: none;
 	}
 	.logo {

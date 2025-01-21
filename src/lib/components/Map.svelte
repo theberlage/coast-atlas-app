@@ -536,7 +536,7 @@
 	.map {
 		grid-column: 1 / 5;
 		grid-row: 1 / 3;
-		background-color: white;
+		background-color: rgba(45, 53, 140, 1.0);
 		width: 100%;
 		height: 100%;
 		z-index: 1;
@@ -550,8 +550,8 @@
 	}
 
 	#overlay-contents {
-		background-color: rgba(255, 255, 0, 0.9);
-		color: black;
+		background-color: rgba(255, 0, 255, 1.0);
+		color: WHITE;
 		padding: 0.6rem;
 		line-height: 1.6rem;
 		border-radius: 0.4rem;
@@ -562,8 +562,8 @@
 	}
 
 	a.overlay-link {
-		border-bottom: 1px solid black;
-		color: black;
+		border-bottom: 1px solid WHITE;
+		color: WHITE;
 		&:hover {
 			border-bottom: none;
 		}
@@ -575,7 +575,7 @@
 			background: none;
 			display: block;
 			border: none;
-			color: black;
+			color: WHITE;
 			padding: 0;
 			margin: 0;
 			height: 1rem;

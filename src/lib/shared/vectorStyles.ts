@@ -60,13 +60,13 @@ export function parseCustomFeatureStyle(properties) {
 			? properties.fill
 			: properties.fill && properties.fill.includes('#')
 			? hexToRGBA(properties.fill, fillOpacity)
-			: `rgba(255, 255, 0, ${fillOpacity})`
+			: `rgba(255, 0, 255, 1.0)`
 	let strokeColor =
 		properties.stroke && properties.stroke.includes('rgba')
 			? properties.stroke
 			: properties.stroke && properties.stroke.includes('#')
 			? hexToRGBA(properties.stroke, strokeOpacity)
-			: `rgba(255, 255, 0, ${strokeOpacity})`
+			: `rgba(255, 0, 255, 1.0)`
 	let strokeWidth = 'stroke-width' in properties ? properties['stroke-width'] : 2
 	let radius = 'radius' in properties ? properties.radius : 6
 	let lineDash = 'strokeStyle' in properties ? properties.strokeStyle : null

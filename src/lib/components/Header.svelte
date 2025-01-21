@@ -51,7 +51,7 @@
 			width: 1.5rem;
 		}
 		&:hover {
-			color: rgba(255, 255, 114);
+			color: rgba(255, 0, 255, 1.0);
 			background: rgba(0, 0, 0, 0.2);
 		}
 		&:active {
