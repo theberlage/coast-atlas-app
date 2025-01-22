@@ -7,7 +7,7 @@
 	const toggleMenu = () => menu.toggle()
 	const goHome = () => {
 		menu.set(false)
-		location.hash = `#/${$chapter}`
+		location.hash = `#/home`
 	}
 </script>
 
@@ -51,7 +51,7 @@
 			width: 1.5rem;
 		}
 		&:hover {
-			color: rgba(255, 0, 255, 1.0);
+			color: rgba(255, 0, 255, 1);
 			background: rgba(0, 0, 0, 0.2);
 		}
 		&:active {
