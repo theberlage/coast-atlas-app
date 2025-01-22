@@ -2,6 +2,7 @@
 	import { slideData } from '$lib/shared/stores/markdownSlides.js'
 	import { menu } from '$lib/shared/stores/componentStates.js'
 	import { fade } from 'svelte/transition'
+	import settings from '$lib/shared/settings.js'
 
 	const toggleMenu = () => menu.toggle()
 
@@ -37,7 +38,11 @@
 
 <svelte:window on:mousemove={(event) => setMarker(event)} />
 
-<div class="menu" transition:fade={{ duration: 600 }}>
+<div
+	class="menu"
+	transition:fade={{ duration: 600 }}
+	style="--highlight: {settings.highlightColor}"
+>
 	<div class="container">
 		<div class="logo">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 249">
@@ -163,7 +168,7 @@
 		text-decoration: none;
 	}
 	a:hover {
-		color: rgba(255, 0, 255, 1);
+		color: var(--highlight);
 		text-decoration: none;
 	}
 	.logo {

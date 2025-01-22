@@ -4,6 +4,8 @@
 	import Page from '../../routes/+page.svelte'
 	import { bars, close } from '$lib/shared/svgs.js'
 	import { selectedChapter as chapter } from '$lib/shared/stores/selectedSlide.js'
+	import settings from '$lib/shared/settings.js'
+
 	const toggleMenu = () => menu.toggle()
 	const goHome = () => {
 		menu.set(false)
@@ -11,7 +13,7 @@
 	}
 </script>
 
-<div class="header">
+<div class="header" style="--highlight: {settings.highlightColor}">
 	<div>
 		<button class:black={$black} class="home-button" on:click={goHome}>
 			<body><span class="hidden">The Berlage: </span>Coast Atlas</body>
@@ -51,12 +53,12 @@
 			width: 1.5rem;
 		}
 		&:hover {
-			color: rgba(255, 0, 255, 1);
+			color: var(--highlight);
 			background: rgba(0, 0, 0, 0.2);
 		}
-		&:active {
+		/* &:active {
 			color: rgba(255, 255, 114);
-		}
+		} */
 	}
 
 	.menu-button {

@@ -1,6 +1,13 @@
 const settings = {
 	// Overview text
 	controlText: 'Click a point on the map',
+	highlightColor: 'rgba(255, 0, 255, 1)',
+	// Map
+	map: {
+		backgroundColor: 'rgba(45, 53, 140, 1)',
+		overlayBackgroundColor: 'rgba(255, 0, 255, 1)',
+		overlayTextColor: 'rgba(255, 255, 255, 1)'
+	},
 	// Chapter settings
 	chapterStyles: {
 		default: {
