@@ -23,7 +23,7 @@
 		if ($index < $count - 1) {
 			window.location.hash = `#/${$chapter}/${$slideshow}/${$index + 2}`
 		} else if ($index === $count - 1) {
-			window.location.hash = `#/${$chapter}/`
+			window.location.hash = `#/home`
 		}
 	}
 
@@ -31,12 +31,12 @@
 		if ($index > 0) {
 			window.location.hash = `#/${$chapter}/${$slideshow}/${$index}`
 		} else if ($index === 0) {
-			window.location.hash = `#/${$chapter}/`
+			window.location.hash = `#/home`
 		}
 	}
 
 	function goHome() {
-		window.location.hash = '#/'
+		window.location.hash = '#/home'
 	}
 
 	// up = 38
