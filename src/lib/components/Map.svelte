@@ -47,7 +47,6 @@
 	import {
 		defaultStyles,
 		selectedStyles,
-		selectableStyles,
 		parseCustomFeatureStyle
 	} from '$lib/shared/vectorStyles.js'
 	import { plus, minus, arrowUp, berlage } from '$lib/shared/svgs.js'
@@ -536,7 +535,7 @@
 	.map {
 		grid-column: 1 / 5;
 		grid-row: 1 / 3;
-		background-color: rgba(45, 53, 140, 1.0);
+		background-color: rgba(45, 53, 140, 1);
 		width: 100%;
 		height: 100%;
 		z-index: 1;
@@ -550,7 +549,7 @@
 	}
 
 	#overlay-contents {
-		background-color: rgba(255, 0, 255, 1.0);
+		background-color: rgba(255, 0, 255, 1);
 		color: WHITE;
 		padding: 0.6rem;
 		line-height: 1.6rem;

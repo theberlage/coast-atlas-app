@@ -33,24 +33,24 @@ export const selectedStyles = new Style({
 	// zIndex: 5
 })
 
-export const selectableStyles = new Style({
-	stroke: new Stroke({
-		color: defaults.selectable.stroke.color,
-		width: defaults.selectable.stroke.width
-	}),
-	fill: new Fill({
-		color: defaults.selectable.fill.color
-	}),
-	image: new Circle({
-		radius: defaults.selectable.point.radius,
-		fill: new Fill({ color: defaults.selectable.point.fill }),
-		stroke: new Stroke({
-			color: defaults.selectable.point.stroke.color,
-			width: defaults.selectable.point.stroke.width
-		})
-	}),
-	zIndex: 4
-})
+// export const selectableStyles = new Style({
+// 	stroke: new Stroke({
+// 		color: defaults.selectable.stroke.color,
+// 		width: defaults.selectable.stroke.width
+// 	}),
+// 	fill: new Fill({
+// 		color: defaults.selectable.fill.color
+// 	}),
+// 	image: new Circle({
+// 		radius: defaults.selectable.point.radius,
+// 		fill: new Fill({ color: defaults.selectable.point.fill }),
+// 		stroke: new Stroke({
+// 			color: defaults.selectable.point.stroke.color,
+// 			width: defaults.selectable.point.stroke.width
+// 		})
+// 	}),
+// 	zIndex: 4
+// })
 
 export function parseCustomFeatureStyle(properties) {
 	let fillOpacity = 'fill-opacity' in properties ? properties['fill-opacity'] : 1
@@ -60,15 +60,19 @@ export function parseCustomFeatureStyle(properties) {
 			? properties.fill
 			: properties.fill && properties.fill.includes('#')
 			? hexToRGBA(properties.fill, fillOpacity)
-			: `rgba(255, 0, 255, 1.0)`
+			: settings.vectorFeatures.default.fill.color
 	let strokeColor =
 		properties.stroke && properties.stroke.includes('rgba')
 			? properties.stroke
 			: properties.stroke && properties.stroke.includes('#')
 			? hexToRGBA(properties.stroke, strokeOpacity)
-			: `rgba(255, 0, 255, 1.0)`
-	let strokeWidth = 'stroke-width' in properties ? properties['stroke-width'] : 2
-	let radius = 'radius' in properties ? properties.radius : 6
+			: settings.vectorFeatures.default.stroke.color
+	let strokeWidth =
+		'stroke-width' in properties
+			? properties['stroke-width']
+			: settings.vectorFeatures.default.stroke.width
+	let radius =
+		'radius' in properties ? properties.radius : settings.vectorFeatures.default.point.radius
 	let lineDash = 'strokeStyle' in properties ? properties.strokeStyle : null
 	return new Style({
 		stroke: new Stroke({

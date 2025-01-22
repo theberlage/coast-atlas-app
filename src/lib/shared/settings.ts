@@ -32,30 +32,8 @@ const settings = {
 				color: 'rgba(255, 0, 255, 1.0)'
 			},
 			point: {
-				radius: 6,
-				fill: 'rgba(255, 0, 255, 1.0)',
-				stroke: {
-					color: 'rgba(255, 0, 255, 1.0)',
-					width: 4
-				}
-			}
-		},
-		// Selectable features (with href or link property)
-		selectable: {
-			stroke: {
-				color: 'rgba(255, 0, 255, 1.0)',
-				width: 4
-			},
-			fill: {
-				color: 'rgba(255, 0, 255, 1.0)'
-			},
-			point: {
-				radius: 6,
-				fill: 'rgba(255, 0, 255, 1.0)',
-				stroke: {
-					color: 'rgba(255, 0, 255, 1.0)',
-					width: 4
-				}
+				// Uses stroke and fill settings above
+				radius: 10
 			}
 		},
 		// On hover
@@ -68,11 +46,11 @@ const settings = {
 				color: 'rgba(255, 0, 255, 1.0)'
 			},
 			point: {
-				radius: 6,
+				radius: 10,
 				fill: 'rgba(255, 0, 255, 1.0)',
 				stroke: {
-					color: 'rgba(255, 0, 255, 1.0)',
-					width: 4
+					color: 'rgba(255, 255, 255, 1.0)',
+					width: 2
 				}
 			}
 		}
