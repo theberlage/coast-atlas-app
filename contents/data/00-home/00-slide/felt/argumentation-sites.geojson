@@ -3,92 +3,113 @@
 	"features": [
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/dune/1", "label": "A.1 A Walking Village," },
+			"properties": { "link": "#/documentation/dune/1", "label": "A.1 A Walking Village," },
 			"geometry": { "type": "Point", "coordinates": [4.160342, 52.032326] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "C.1 A Rediscovered Shelter," },
+			"properties": { "link": "#/documentation/slide/3", "label": "C.1 A Rediscovered Shelter," },
 			"geometry": { "type": "Point", "coordinates": [4.115443, 51.985073] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "C.2 an Expanded Bunker," },
+			"properties": { "link": "#/documentation/slide/3", "label": "C.2 an Expanded Bunker," },
 			"geometry": { "type": "Point", "coordinates": [4.115719, 51.984808] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "C.3 and a Camouflaged Complex." },
+			"properties": {
+				"link": "#/documentation/slide/3",
+				"label": "C.3 and a Camouflaged Complex."
+			},
 			"geometry": { "type": "Point", "coordinates": [4.154491, 52.015814] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "B.2 and a Kurhaus." },
+			"properties": { "link": "#/documentation/slide/3", "label": "B.2 and a Kurhaus." },
 			"geometry": { "type": "Point", "coordinates": [4.282205, 52.11376] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "B.1 A Bathhouse," },
+			"properties": { "link": "#/documentation/slide/3", "label": "B.1 A Bathhouse," },
 			"geometry": { "type": "Point", "coordinates": [4.278841, 52.111932] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "C.4 A Filled-in Anti-tank Ditch," },
+			"properties": {
+				"link": "#/documentation/slide/3",
+				"label": "C.4 A Filled-in Anti-tank Ditch,"
+			},
 			"geometry": { "type": "Point", "coordinates": [4.278128, 52.085472] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "A.6 and a Water Filtering System." },
+			"properties": {
+				"link": "#/documentation/slide/3",
+				"label": "A.6 and a Water Filtering System."
+			},
 			"geometry": { "type": "Point", "coordinates": [4.33937, 52.134738] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "A.5 a Water Distribution Network," },
+			"properties": {
+				"link": "#/documentation/slide/3",
+				"label": "A.5 a Water Distribution Network,"
+			},
 			"geometry": { "type": "Point", "coordinates": [4.353471, 52.150769] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "A.3-1 Water Storage Landmarks," },
+			"properties": {
+				"link": "#/documentation/slide/3",
+				"label": "A.3-1 Water Storage Landmarks,"
+			},
 			"geometry": { "type": "Point", "coordinates": [4.127029, 51.979208] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "A.3-2 Water Storage Landmarks," },
+			"properties": {
+				"link": "#/documentation/slide/3",
+				"label": "A.3-2 Water Storage Landmarks,"
+			},
 			"geometry": { "type": "Point", "coordinates": [4.202251, 52.045595] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "A.2 and a Strengthening Seawall." },
+			"properties": {
+				"link": "#/documentation/slide/3",
+				"label": "A.2 and a Strengthening Seawall."
+			},
 			"geometry": { "type": "Point", "coordinates": [4.166369, 52.031234] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "A.8 and a Shipping Dock." },
+			"properties": { "link": "#/documentation/slide/3", "label": "A.8 and a Shipping Dock." },
 			"geometry": { "type": "Point", "coordinates": [4.127188, 51.975001] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "C.5 and a Built-upon Bunker" },
+			"properties": { "link": "#/documentation/slide/3", "label": "C.5 and a Built-upon Bunker" },
 			"geometry": { "type": "Point", "coordinates": [4.297538, 52.103873] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "A.7 A Railway Station," },
+			"properties": { "link": "#/documentation/slide/3", "label": "A.7 A Railway Station," },
 			"geometry": { "type": "Point", "coordinates": [4.128211, 51.975422] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "B.3 Linen Tents in the Dunes," },
+			"properties": { "link": "#/documentation/slide/3", "label": "B.3 Linen Tents in the Dunes," },
 			"geometry": { "type": "Point", "coordinates": [4.115993, 51.99269] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "A.4 Water Storage Landmarks," },
+			"properties": { "link": "#/documentation/slide/3", "label": "A.4 Water Storage Landmarks," },
 			"geometry": { "type": "Point", "coordinates": [4.306442, 52.117399] }
 		},
 		{
 			"type": "Feature",
-			"properties": { "radius": 10, "link": "#/documentation/slide/3", "label": "B.4 and a Wooden Camp City." },
+			"properties": { "link": "#/documentation/slide/3", "label": "B.4 and a Wooden Camp City." },
 			"geometry": { "type": "Point", "coordinates": [4.124326, 51.991664] }
 		}
 	]
