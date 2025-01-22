@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ZurichBT';
+  src: url('/assets/ZurichBT-Italic.woff') format('woff');
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: italic;
+}
+
 html,
 body {
   font-family: ZurichBT, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -43,7 +51,7 @@ strong {
 }
 
 em {
-  font-style: normal;
+  font-style: italic;
 }
 
 button {
