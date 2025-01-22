@@ -111,7 +111,7 @@
 						{#if !frontmatter.meta.hidden}
 							{#if frontmatter.meta.chapter}
 								{#if frontmatter.meta.link}
-									<li class="slideshow">
+									<li class="chapter">
 										<a on:click={toggleMenu} on:click={() => (hover = true)} href="#/{chapter}"
 											>{frontmatter.meta.heading}</a
 										>
@@ -163,7 +163,7 @@
 		text-decoration: none;
 	}
 	a:hover {
-		color: rgba(255, 0, 255, 1.0);
+		color: rgba(255, 0, 255, 1);
 		text-decoration: none;
 	}
 	.logo {

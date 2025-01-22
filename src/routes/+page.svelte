@@ -59,7 +59,7 @@
 		width: 100vw;
 		height: 100vh;
 	}
-	@media all and (max-width: 2000px) {
+	@media all and (max-width: 700px) {
 		.grid-container {
 			display: grid;
 			grid-template-columns: [panel] 1fr;
