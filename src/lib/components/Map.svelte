@@ -493,7 +493,7 @@
 			</div>
 			<div id="overlay-content">
 				{#if overlayContents}
-					{#if overlayContents.link || overlayContents['argumentation-link']}
+					{#if overlayContents.link}
 						<p>{overlayContents.label}</p>
 						<p>
 							{#if home}
