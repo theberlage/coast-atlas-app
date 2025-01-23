@@ -47,7 +47,7 @@ const settings = {
 		selected: {
 			stroke: {
 				color: 'rgba(255, 0, 255, 1.0)',
-				width: 2
+				width: 6
 			},
 			fill: {
 				color: 'rgba(255, 0, 255, 1.0)'
@@ -56,8 +56,15 @@ const settings = {
 				radius: 10,
 				fill: 'rgba(255, 0, 255, 1.0)',
 				stroke: {
-					color: 'rgba(255, 255, 255, 1.0)',
-					width: 2
+					color: 'rgba(255, 0, 255, 1.0)',
+					width: 6
+				}
+			},
+			LineString: {
+				fill: '#FF00FF',
+				stroke: {
+					color: '#FF00FF',
+					width:3
 				}
 			}
 		}
