@@ -2,6 +2,7 @@
 	import { slideData } from '$lib/shared/stores/markdownSlides.js'
 	import { menu } from '$lib/shared/stores/componentStates.js'
 	import { fade } from 'svelte/transition'
+	import settings from '$lib/shared/settings.js'
 
 	const toggleMenu = () => menu.toggle()
 
@@ -37,18 +38,22 @@
 
 <svelte:window on:mousemove={(event) => setMarker(event)} />
 
-<div class="menu" transition:fade={{ duration: 600 }}>
+<div
+	class="menu"
+	transition:fade={{ duration: 600 }}
+	style="--highlight: {settings.highlightColor}"
+>
 	<div class="container">
 		<div class="logo">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 249">
-				<g fill="rgb(252,217,213)" fill-rule="nonzero" id="group_artwork">
+				<g fill="RGB(250, 220, 233)" fill-rule="nonzero" id="group_artwork">
 					<path
 						id="body"
 						d="M137.8,108c15.6-8.5,26.2-25,26.2-44c0-27.6-22.4-50-50-50H14v94H0v127h180V108H137.8z M114,221H14V121h100
         c27.6,0,50,22.4,50,50S141.6,221,114,221z"
 					/>
 				</g>
-				<g stroke="rgb(119, 63, 63)" fill="none" stroke-width="6">
+				<g stroke="RGB(135, 117, 125)" fill="none" stroke-width="6">
 					<circle
 						class="circle"
 						class:circle-transform-cw={hover}
@@ -111,7 +116,7 @@
 						{#if !frontmatter.meta.hidden}
 							{#if frontmatter.meta.chapter}
 								{#if frontmatter.meta.link}
-									<li class="slideshow">
+									<li class="chapter">
 										<a on:click={toggleMenu} on:click={() => (hover = true)} href="#/{chapter}"
 											>{frontmatter.meta.heading}</a
 										>
@@ -163,7 +168,7 @@
 		text-decoration: none;
 	}
 	a:hover {
-		color: rgba(255, 255, 114);
+		color: var(--highlight);
 		text-decoration: none;
 	}
 	.logo {

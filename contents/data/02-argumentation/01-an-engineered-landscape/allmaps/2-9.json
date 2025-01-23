@@ -1,0 +1,557 @@
+{
+  "id": "https://annotations.allmaps.org/maps/56ab6c0f3bf50e91",
+  "type": "Annotation",
+  "@context": [
+    "http://iiif.io/api/extension/georef/1/context.json",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "created": "2024-12-17T13:57:17.640Z",
+  "modified": "2024-12-17T13:57:17.640Z",
+  "motivation": "georeferencing",
+  "target": {
+    "type": "SpecificResource",
+    "source": {
+      "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d",
+      "type": "ImageService2",
+      "height": 2529,
+      "width": 4018,
+      "partOf": [
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/23",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 23"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/map-room/bonnekaart",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            },
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/map-room",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/33",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 33"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            },
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/59",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 59"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            },
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/64",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 64"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/67",
+          "type": "Canvas",
+          "label": {
+            "en": [
+              "Canvas 67"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/v3/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "en": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            },
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/68",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 68"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            },
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/ ",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/133",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 133"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/146",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 146"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            },
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/148",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 148"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            },
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas/",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "https://dlc.services/iiif-img/7/33/9c7b36f21666aa6f206d07e7327e699d/canvas/c/158",
+          "type": "Canvas",
+          "label": {
+            "none": [
+              "Canvas 158"
+            ]
+          },
+          "partOf": [
+            {
+              "id": "https://dlc.services/iiif-resource/7/string1string2string3/coast-atlas",
+              "type": "Manifest",
+              "label": {
+                "none": [
+                  "Generated from 'string1string2string3' named query"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "selector": {
+      "type": "SvgSelector",
+      "value": "<svg width=\"4018\" height=\"2529\"><polygon points=\"3617,385 3761,237 3999,470 3848,629\" /></svg>"
+    }
+  },
+  "body": {
+    "type": "FeatureCollection",
+    "transformation": {
+      "type": "polynomial",
+      "options": {
+        "order": 1
+      }
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3723,
+            406
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2893294,
+            52.1075435
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3274,
+            446
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2728682,
+            52.1065599
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3406,
+            259
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2775399,
+            52.1106456
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3762,
+            369
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2903303,
+            52.108342
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3591,
+            215
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2842733,
+            52.1117387
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3858,
+            477
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2944888,
+            52.1058513
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3486,
+            178
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.280541,
+            52.1126607
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3461,
+            650
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2790605,
+            52.102695
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "resourceCoords": [
+            3432,
+            378
+          ]
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            4.2783802,
+            52.1079054
+          ]
+        }
+      }
+    ],
+    "_allmaps": {
+      "id": "https://annotations.allmaps.org/maps/56ab6c0f3bf50e91",
+      "version": "https://annotations.allmaps.org/maps/56ab6c0f3bf50e91@2de9b6692dc1642b",
+      "image": {
+        "id": "https://annotations.allmaps.org/images/f5475e869ce71099",
+        "version": "https://annotations.allmaps.org/images/f5475e869ce71099@4aa4d3da34375676",
+        "canvases": [
+          {
+            "id": "https://annotations.allmaps.org/canvases/fdbcefa48da25d95",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/897309974203998e"
+              },
+              {
+                "id": "https://annotations.allmaps.org/manifests/c062adc8a67f5a84"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/62b6117c4e8f4fb4",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+              },
+              {
+                "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/5704a84217895b61",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
+              },
+              {
+                "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/432306078398bb9f",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/e96f21b6476acd97",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/f880c6f3a09d2e1f"
+              },
+              {
+                "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/7f9a3c4f7ac0a35b",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+              },
+              {
+                "id": "https://annotations.allmaps.org/manifests/e6bcda46b09aa8f5"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/4134be67c4d2a4ff",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/c9f09189d3d4cfb1",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+              },
+              {
+                "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/413c2dbf2602983f",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+              },
+              {
+                "id": "https://annotations.allmaps.org/manifests/c3c68ac8ac87b3a4"
+              }
+            ]
+          },
+          {
+            "id": "https://annotations.allmaps.org/canvases/f166b359672365d3",
+            "manifests": [
+              {
+                "id": "https://annotations.allmaps.org/manifests/20e379f4f1f1605b"
+              }
+            ]
+          }
+        ]
+      },
+      "scale": 0.40792,
+      "area": 427734.32
+    }
+  }
+}

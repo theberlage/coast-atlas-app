@@ -1,0 +1,203 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.160342, 52.032326] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.1 A Walking Village",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.115443, 51.985073] },
+			"properties": {
+				"documentation-link": "#/documentation/defense-line/1",
+				"label": "C.1 A Rediscovered Shelter",
+				"argumentation-link": "#/argumentation/military-remnants/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.115719, 51.984808] },
+			"properties": {
+				"documentation-link": "#/documentation/defense-line/1",
+				"label": "C.2 an Expanded Bunker",
+				"argumentation-link": "#/argumentation/military-remnants/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.154491, 52.015814] },
+			"properties": {
+				"documentation-link": "#/documentation/defense-line/1",
+				"label": "C.3 and a Camouflaged Complex",
+				"argumentation-link": "#/argumentation/military-remnants/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.282205, 52.11376] },
+			"properties": {
+				"documentation-link": "#/documentation/bathing-site/1",
+				"label": "B.2 and a Kurhaus",
+				"argumentation-link": "#/argumentation/seaside-buildings/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.278841, 52.111932] },
+			"properties": {
+				"documentation-link": "#/documentation/bathing-site/1",
+				"label": "B.1 A Bathhouse",
+				"argumentation-link": "#/argumentation/seaside-buildings/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.278128, 52.085472] },
+			"properties": {
+				"documentation-link": "#/documentation/defense-line/1",
+				"label": "C.4 A Filled-in Anti-tank Ditch",
+				"argumentation-link": "#/argumentation/military-remnants/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.33937, 52.134738] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.6 and a Water Filtering System",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.353471, 52.150769] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.5 a Water Distribution Network",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.127029, 51.979208] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.3-1 Water Storage Landmarks",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.202251, 52.045595] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.3-2 Water Storage Landmarks",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.166369, 52.031234] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.2 and a Strengthening Seawall",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.127188, 51.975001] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.8 and a Shipping Dock",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.297538, 52.103873] },
+			"properties": {
+				"documentation-link": "#/documentation/defense-line/1",
+				"label": "C.5 and a Built-upon Bunker",
+				"argumentation-link": "#/argumentation/military-remnants/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.128211, 51.975422] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.7 A Railway Station",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.115993, 51.99269] },
+			"properties": {
+				"documentation-link": "#/documentation/bathing-site/1",
+				"label": "B.3 Linen Tents in the Dunes",
+				"argumentation-link": "#/argumentation/seaside-buildings/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.306442, 52.117399] },
+			"properties": {
+				"documentation-link": "#/documentation/dune-landscape/1",
+				"label": "A.4 Water Storage Landmarks",
+				"argumentation-link": "#/argumentation/an-engineered-landscape/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": { "type": "Point", "coordinates": [4.124326, 51.991664] },
+			"properties": {
+				"documentation-link": "#/documentation/bathing-site/1",
+				"label": "B.4 and a Wooden Camp City",
+				"argumentation-link": "#/argumentation/seaside-buildings/1",
+				"installation-link": "#/installation",
+				"link": "custom"
+			}
+		}
+	]
+}

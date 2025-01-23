@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte'
 	import { fade } from 'svelte/transition'
 
-	// Stores
+	// Stores and settings
 	import {
 		mapBoxLayer as mapboxSettings,
 		selectedSlideData as selectedSlide,
@@ -15,6 +15,7 @@
 	} from '$lib/shared/stores/selectedSlide.js'
 	import { panel } from '$lib/shared/stores/componentStates.js'
 	import { close } from '$lib/shared/svgs.js'
+	import settings from '$lib/shared/settings.js'
 
 	// Shared functions
 	import { calculateExtent, sleep, hexToRGBA, stringToHTML } from '$lib/shared/utils.js'
@@ -47,7 +48,6 @@
 	import {
 		defaultStyles,
 		selectedStyles,
-		selectableStyles,
 		parseCustomFeatureStyle
 	} from '$lib/shared/vectorStyles.js'
 	import { plus, minus, arrowUp, berlage } from '$lib/shared/svgs.js'
@@ -86,7 +86,7 @@
 	let overlayElement: HTMLElement
 	let overlayContents: any
 
-	$: about = $chapter === 'about' ? true : false
+	$: home = $chapter === 'home' ? true : false
 
 	const addControls = () => {
 		const collection = new Collection()
@@ -478,7 +478,12 @@
 
 <svelte:window bind:innerWidth />
 
-<div id="ol" class="map" style="--text-color: {$textColor}" />
+<div
+	id="ol"
+	class="map"
+	style="--map-background: {settings.map.backgroundColor}; --overlay-background: {settings.map
+		.overlayBackgroundColor}; --overlay-color: {settings.map.overlayTextColor}"
+/>
 
 <div id="overlay" bind:this={overlayElement}>
 	{#if overlayBoolean}
@@ -491,19 +496,32 @@
 					{#if overlayContents.link}
 						<p>{overlayContents.label}</p>
 						<p>
-							{#if about}
+							{#if home}
 								<p>
 									<a
 										class="overlay-link"
 										on:click={closeOverlay}
-										href={overlayContents.link.replace('argumentation', 'documentation')}
+										href={overlayContents['documentation-link']}
 									>
 										Open in Documentation
 									</a>
 								</p>
 								<p>
-									<a class="overlay-link" on:click={closeOverlay} href={overlayContents.link}>
+									<a
+										class="overlay-link"
+										on:click={closeOverlay}
+										href={overlayContents['argumentation-link']}
+									>
 										Open in Argumentation
+									</a>
+								</p>
+								<p>
+									<a
+										class="overlay-link"
+										on:click={closeOverlay}
+										href={overlayContents['installation-link']}
+									>
+										Open in Installation
 									</a>
 								</p>
 							{:else}
@@ -530,13 +548,13 @@
 	{/if}
 </div>
 
-<div id="controls" class:black={$black} />
+<div id="controls" class:black={$black} style="--highlight: {settings.highlightColor}" />
 
 <style>
 	.map {
 		grid-column: 1 / 5;
 		grid-row: 1 / 3;
-		background-color: white;
+		background-color: var(--map-background);
 		width: 100%;
 		height: 100%;
 		z-index: 1;
@@ -544,14 +562,14 @@
 
 	#overlay {
 		position: absolute;
-		min-width: 200px;
-		max-width: 600px;
+		min-width: 270px;
+		max-width: 700px;
 		/* width: auto; */
 	}
 
 	#overlay-contents {
-		background-color: rgba(255, 255, 0, 0.9);
-		color: black;
+		background-color: var(--overlay-background);
+		color: var(--overlay-color);
 		padding: 0.6rem;
 		line-height: 1.6rem;
 		border-radius: 0.4rem;
@@ -562,8 +580,8 @@
 	}
 
 	a.overlay-link {
-		border-bottom: 1px solid black;
-		color: black;
+		border-bottom: 1px solid WHITE;
+		color: WHITE;
 		&:hover {
 			border-bottom: none;
 		}
@@ -575,7 +593,7 @@
 			background: none;
 			display: block;
 			border: none;
-			color: black;
+			color: WHITE;
 			padding: 0;
 			margin: 0;
 			height: 1rem;
@@ -616,48 +634,39 @@
 		margin: 0.4rem 0 0 1rem;
 		width: 2rem;
 		align-self: start;
+		& .ol-control {
+			background: none;
+			position: relative;
+			& button {
+				background: none;
+				border: none;
+				color: white;
+				height: 2rem;
+				width: 2rem;
+				cursor: pointer;
+				border-radius: 0.2rem;
+				& svg {
+					height: 1.5rem;
+					width: 1.5rem;
+				}
+				&:hover {
+					text-decoration: none;
+					outline: none;
+					color: var(--highlight);
+					background: rgba(0, 0, 0, 0.2);
+				}
+			}
+		}
 	}
 
 	.black {
 		& .ol-control {
 			& button {
 				color: black;
-				&:hover {
-					color: yellow;
-				}
 			}
 		}
 	}
 
-	:global(.ol-control) {
-		background: none;
-		position: relative;
-		& button {
-			background: none;
-			border: none;
-			color: white;
-			height: 2rem;
-			width: 2rem;
-			cursor: pointer;
-			border-radius: 0.2rem;
-			& svg {
-				height: 1.5rem;
-				width: 1.5rem;
-			}
-			&:hover {
-				text-decoration: none;
-				outline: none;
-				color: white;
-				background: rgba(0, 0, 0, 0.2);
-			}
-			&:focus {
-				text-decoration: none;
-				outline: none;
-				color: yellow;
-			}
-		}
-	}
-
-	@media all and (max-width: 700px) {
+	@media all and (max-width: 500px) {
 	}
 </style>

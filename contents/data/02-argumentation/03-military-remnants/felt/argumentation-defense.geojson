@@ -1,0 +1,30 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": { "radius": 10, "link": "#/argumentation/military-remnants/2", "label": "C.1 A Rediscovered Shelter, " },
+			"geometry": { "type": "Point", "coordinates": [4.115443, 51.985073] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "radius": 10, "link": "#/argumentation/military-remnants/6", "label": "C.2 an Expanded Bunker," },
+			"geometry": { "type": "Point", "coordinates": [4.115719, 51.984808] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "radius": 10, "link": "#/argumentation/military-remnants/10", "label": "C.3 and a Camouflaged Complex." },
+			"geometry": { "type": "Point", "coordinates": [4.154491, 52.015814] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "radius": 10, "link": "#/argumentation/military-remnants/14", "label": "C.4 A Filled-in Anti-tank Ditch," },
+			"geometry": { "type": "Point", "coordinates": [4.278128, 52.085472] }
+		},
+		{
+			"type": "Feature",
+			"properties": { "radius": 10, "link": "#/argumentation/military-remnants/18", "label": "C.5 and a Built-upon Bunker." },
+			"geometry": { "type": "Point", "coordinates": [4.297538, 52.103873] }
+		}
+	]
+}
