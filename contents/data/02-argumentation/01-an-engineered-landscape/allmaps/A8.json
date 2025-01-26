@@ -15,7 +15,7 @@
       "target": {
         "type": "SpecificResource",
         "source": {
-          "id": "https://dlc.services/iiif-img/7/33/b3a73613b4d8c042a616e9a1a68bb147",
+          "id": "https://dlc.services/iiif-img/7/33/c6ed83e7d5e2cf2e718831711badd633",
           "type": "ImageService2",
           "height": 14031,
           "width": 9921
