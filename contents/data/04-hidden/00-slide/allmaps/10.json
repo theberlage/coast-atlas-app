@@ -1,0 +1,92 @@
+{
+	"type": "AnnotationPage",
+	"@context": "http://www.w3.org/ns/anno.jsonld",
+	"items": [
+		{
+			"id": "https://annotations.allmaps.org/maps/e3a31246181b153ek",
+			"type": "Annotation",
+			"@context": [
+				"http://iiif.io/api/extension/georef/1/context.json",
+				"http://iiif.io/api/presentation/3/context.json"
+			],
+			"created": "2025-01-26T21:40:56.820Z",
+			"modified": "2025-01-26T21:40:56.820Z",
+			"motivation": "georeferencing",
+			"target": {
+				"type": "SpecificResource",
+				"source": {
+					"id": "https://dlc.services/iiif-img/7/33/eb7c041d7a27e1fd6b530385507cc31a",
+					"type": "ImageService2",
+					"height": 2126,
+					"width": 26457
+				},
+				"selector": {
+					"type": "SvgSelector",
+					"value": "<svg width=\"26457\" height=\"2126\"><polygon points=\"15112,2010 15114,114 11342,114 11343,2010\" /></svg>"
+				}
+			},
+			"body": {
+				"type": "FeatureCollection",
+				"transformation": {
+					"type": "polynomial",
+					"options": {
+						"order": 1
+					}
+				},
+				"features": [
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [493, 6]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.100687, 51.9858804]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2941, 2120]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1046093, 51.9832458]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [491, 2110]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1007831, 51.9833114]
+						}
+					},
+					{
+						"type": "Feature",
+						"properties": {
+							"resourceCoords": [2938, 6]
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [4.1045121, 51.9858923]
+						}
+					}
+				],
+				"_allmaps": {
+					"id": "https://annotations.allmaps.org/maps/e3a31246181b153e",
+					"version": "https://annotations.allmaps.org/maps/e3a31246181b153e@28897f13a2a86675",
+					"image": {
+						"id": "https://annotations.allmaps.org/images/3a57ba3700d46dd8",
+						"version": "https://annotations.allmaps.org/images/3a57ba3700d46dd8@af45df1243de7bc8",
+						"canvases": []
+					},
+					"scale": 8.228052,
+					"area": 105594.96
+				}
+			}
+		}
+	]
+}

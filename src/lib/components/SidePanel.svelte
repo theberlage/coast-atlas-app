@@ -292,7 +292,7 @@
 		border-width: 2px;
 		border-style: solid;
 	}
-	@media all and (max-width: 700px) {
+	@media all and (max-width: 300px) {
 		.panel-grid-container {
 			border-radius: 1rem 1rem 0 0;
 			margin: 0.4rem 1rem 4rem 1rem;
