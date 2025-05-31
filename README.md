@@ -32,7 +32,7 @@ The following file structure is used for the content (general introduction and i
 
 **Markdown with YAML frontmatter**
 
-Markdown is a markup language to add formatting to plain text. [See this guide for more information](https://www.markdownguide.org/basic-syntax/). Each markdown file starts with a metadata block (also called *frontmatter*) in the YAML format, set between `---`. YAML is a 'human friendly' format to store data, [here's a tutorial](https://spacelift.io/blog/yaml).
+Markdown is a markup language to add formatting to plain text. [See this guide for more information](https://www.markdownguide.org/basic-syntax/). Each markdown file starts with a metadata block (also called _frontmatter_) in the YAML format, set between `---`. YAML is a 'human friendly' format to store data, [here's a tutorial](https://spacelift.io/blog/yaml).
 
 Each slide contains the following frontmatter:
 
@@ -60,6 +60,13 @@ allmaps: # List of maps
       threshold: 20 # 0-100
       hardness: 20 # 0-100
     colorize: '#8c00ff' # Hex color code
+legend: # Optional legend for geojson features
+  - label: Building # Label for legend item
+    fill: #e30022 # Hex color code
+    fill-opacity: 70 # 0-100
+    stroke: #000000 # Hex color code
+    stroke-opacity: 100 # 0-100
+    circle: true # Draw a circle
 ```
 
 **GeoJSON**
